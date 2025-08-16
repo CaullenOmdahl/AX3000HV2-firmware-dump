@@ -1,0 +1,251 @@
+8811_bbu_api           61440  0 
+act_connmark           16384  0 
+act_gact               16384  0 
+act_mirred             16384  0 
+act_skbedit            16384  0 
+ah6                    16384  0 
+air_en8811h            24576  1 8811_bbu_api
+asn1_decoder           16384  1 nf_nat_snmp_basic
+cls_basic              16384  0 
+cls_flow               20480  0 
+cls_fw                 16384  0 
+cls_matchall           16384  0 
+cls_route              20480  0 
+cls_tcindex            20480  0 
+cls_u32                24576  0 
+conntrack_analysis   4210688  0 
+ebt_802_3              16384  0 
+ebt_among              16384  0 
+ebt_arp                16384  4 
+ebt_arpreply           16384  0 
+ebt_dnat               16384  0 
+ebt_ip                 16384 12 
+ebt_ip6                16384  0 
+ebt_limit              16384  0 
+ebt_mark               16384  0 
+ebt_mark_m             16384  0 
+ebt_pkttype            16384  0 
+ebt_redirect           16384  0 
+ebt_snat               16384  0 
+ebt_stp                16384  0 
+ebt_vlan               16384  0 
+ebtable_broute         16384  1 
+ebtable_filter         16384  1 
+ebtable_nat            16384  0 
+ebtables               28672  3 ebtable_nat,ebtable_filter,ebtable_broute
+ecnt_legacy_api        24576  5 xpon,phy,hw_nat,eth,tccicmd
+econet_bob             16384  0 
+em_u32                 16384  0 
+esp6                   20480  0 
+eth                   233472 10 xpon_igmp,ponvlan,xpon,mdio_arht,vxlan_hw_offload,l2tp_offload,gre_hw_offload,loopdetect,hw_nat,eth_ephy
+eth_ephy              118784  0 
+fe_core               192512  1 qdma_wan
+gpio_button_hotplug    16384  1 tccicmd
+gpon_flow              94208  0 
+gre                    16384  3 pptp,ip6_gre,ip_gre
+gre_hw_offload         20480  0 
+hostadpt               20480  0 
+hw_nat                548864  1 
+ifb                    16384  0 
+ifc                   172032  2 qdma_wan,qdma_lan
+ip_gre                 28672  0 
+ip6_gre                32768  0 
+ip6_udp_tunnel         16384  3 wireguard,l2tp_core,vxlan
+ip6t_REJECT            16384  2 
+ip6table_filter        16384  1 
+ip6table_mangle        16384  0 
+ipcomp6                16384  0 
+ipt_REJECT             16384  2 
+iptable_filter         16384  1 
+l2tp_core              24576  2 l2tp_ppp,l2tp_netlink
+l2tp_netlink           24576  1 l2tp_ppp
+l2tp_offload           20480  0 
+l2tp_ppp               24576  0 
+loopdetect             20480  0 
+lro_wan                28672  0 
+mapfilter              53248  2 
+mdio_arht              16384  1 8811_bbu_api
+module_sel             20480  0 
+mt_whnat               69632  0 
+mt7916_ap            7589888  6 mt_whnat
+nat46                  36864  0 
+nf_conncount           20480  1 xt_connlimit
+nf_conntrack_amanda    16384  2 nf_nat_amanda
+nf_conntrack_broadcast   16384  1 nf_conntrack_snmp
+nf_conntrack_snmp      16384  2 nf_nat_snmp_basic
+nf_log_common          16384  2 nf_log_ipv4,nf_log_ipv6
+nf_log_ipv4            16384  0 
+nf_log_ipv6            16384  0 
+nf_nat_amanda          16384  0 
+nf_nat_snmp_basic      16384  0 
+nls_cp936             135168  0 
+nls_utf8               16384  0 
+npu                    24576  0 
+phy                   303104  0 
+ponmacfilter           20480  0 
+ponvlan               258048  1 xpon_igmp
+ppp_async              20480  0 
+ppp_mppe               16384  0 
+pptp                   28672  0 
+qdma_lan              225280  0 
+qdma_wan              192512  1 xpon
+sch_hfsc               28672  0 
+sch_htb                28672  0 
+sch_ingress            16384  0 
+sch_tbf                20480  0 
+scsi_mod              106496  2 usb_storage,sd_mod
+sd_mod                 36864  0 
+secureupgrade          16384  0 
+sif                    16384  1 phy
+speedtest            2297856  0 
+tccicmd                32768  4 xpon,eth_ephy,eth,sif
+udp_tunnel             16384  3 wireguard,l2tp_core,vxlan
+usb_storage            49152  0 
+vxlan                  49152  0 
+vxlan_hw_offload       24576  0 
+wireguard              94208  0 
+xfrm6_tunnel           16384  1 ipcomp6
+xpon                  618496  6 ponmacfilter,xpon_igmp,ponvlan,xponmap
+xpon_igmp             122880  0 
+xpon_int               20480  0 
+xponmap                57344  1 gpon_flow
+xt_CLASSIFY            16384  0 
+xt_DSCP                16384  0 
+xt_LOG                 16384  0 
+xt_NFQUEUE             16384  0 
+xt_connbytes           16384  0 
+xt_connlimit           16384  0 
+xt_connmark            16384  0 
+xt_esp                 16384  0 
+xt_helper              16384  0 
+xt_length              16384  0 
+xt_policy              16384  0 
+xt_recent              20480  0 
+xt_statistic           16384  0 
+xt_time                16384  0 
+---
+conntrack_analysis 4210688 0 - Live 0xe7690000 (O)
+lro_wan 28672 0 - Live 0xbfdf0000 (PO)
+speedtest 2297856 0 - Live 0xe5f61000 (PO)
+ebtable_nat 16384 0 - Live 0xbfdeb000
+ebtable_filter 16384 1 - Live 0xbfde6000
+ebtable_broute 16384 1 - Live 0xbfde1000
+xt_time 16384 0 - Live 0xbfdd9000
+xt_statistic 16384 0 - Live 0xbfdd1000
+xt_recent 20480 0 - Live 0xbfdc8000
+xt_policy 16384 0 - Live 0xbfdc0000
+xt_length 16384 0 - Live 0xbfdb8000
+xt_helper 16384 0 - Live 0xbfdb3000
+xt_esp 16384 0 - Live 0xbfdab000
+xt_connmark 16384 0 - Live 0xbfda3000
+xt_connlimit 16384 0 - Live 0xbfd9b000
+xt_connbytes 16384 0 - Live 0xbfd93000
+xt_NFQUEUE 16384 0 - Live 0xbfd8b000
+xt_LOG 16384 0 - Live 0xbfd83000
+xt_DSCP 16384 0 - Live 0xbfd7e000
+xt_CLASSIFY 16384 0 - Live 0xbfd79000
+wireguard 94208 0 - Live 0xbfd5a000
+pptp 28672 0 - Live 0xbfd4f000
+ppp_mppe 16384 0 - Live 0xbfd47000
+ppp_async 20480 0 - Live 0xbfd3e000
+nf_nat_snmp_basic 16384 0 - Live 0xbfd36000
+nf_nat_amanda 16384 0 - Live 0xbfd2e000
+nf_log_ipv4 16384 0 - Live 0xbfd26000
+nf_conntrack_snmp 16384 2 nf_nat_snmp_basic, Live 0xbfd1e000
+nf_conntrack_broadcast 16384 1 nf_conntrack_snmp, Live 0xbfd19000
+nf_conntrack_amanda 16384 2 nf_nat_amanda, Live 0xbfd11000
+nf_conncount 20480 1 xt_connlimit, Live 0xbfd08000
+l2tp_ppp 24576 0 - Live 0xbfcfd000
+iptable_filter 16384 1 - Live 0xbfcf5000
+ipt_REJECT 16384 2 - Live 0xbfced000
+ebtables 28672 3 ebtable_nat,ebtable_filter,ebtable_broute, Live 0xbfce2000
+ebt_vlan 16384 0 - Live 0xbfcdd000
+ebt_stp 16384 0 - Live 0xbfcd5000
+ebt_snat 16384 0 - Live 0xbfccd000
+ebt_redirect 16384 0 - Live 0xbfcc8000
+ebt_pkttype 16384 0 - Live 0xbfcc0000
+ebt_mark_m 16384 0 - Live 0xbfcb8000
+ebt_mark 16384 0 - Live 0xbfcb0000
+ebt_limit 16384 0 - Live 0xbfca8000
+ebt_ip6 16384 0 - Live 0xbfca0000
+ebt_ip 16384 12 - Live 0xbfc98000
+ebt_dnat 16384 0 - Live 0xbfc90000
+ebt_arpreply 16384 0 - Live 0xbfc88000
+ebt_arp 16384 4 - Live 0xbfc80000
+ebt_among 16384 0 - Live 0xbfc78000
+ebt_802_3 16384 0 - Live 0xbfc70000
+asn1_decoder 16384 1 nf_nat_snmp_basic, Live 0xbfc6b000
+act_connmark 16384 0 - Live 0xbfc66000
+sch_tbf 20480 0 - Live 0xbfc60000
+sch_ingress 16384 0 - Live 0xbfc5b000
+sch_htb 28672 0 - Live 0xbfc50000
+sch_hfsc 28672 0 - Live 0xbfc48000
+em_u32 16384 0 - Live 0xbfc43000
+cls_u32 24576 0 - Live 0xbfc39000
+cls_tcindex 20480 0 - Live 0xbfc30000
+cls_route 20480 0 - Live 0xbfc27000
+cls_matchall 16384 0 - Live 0xbfc1f000
+cls_fw 16384 0 - Live 0xbfc17000
+cls_flow 20480 0 - Live 0xbfc0e000
+cls_basic 16384 0 - Live 0xbfc09000
+act_skbedit 16384 0 - Live 0xbfc04000
+act_mirred 16384 0 - Live 0xbfbfc000
+act_gact 16384 0 - Live 0xbfbf4000
+nf_log_ipv6 16384 0 - Live 0xbfbec000
+nf_log_common 16384 2 nf_log_ipv4,nf_log_ipv6, Live 0xbfbe4000
+ip6table_mangle 16384 0 - Live 0xbfbdf000
+ip6table_filter 16384 1 - Live 0xbfbda000
+ip6t_REJECT 16384 2 - Live 0xbfbd5000
+ip6_gre 32768 0 - Live 0xbfbc8000
+ip_gre 28672 0 - Live 0xbfbbc000
+gre 16384 3 pptp,ip6_gre,ip_gre, Live 0xbfbb4000
+ifb 16384 0 - Live 0xbfbac000
+nat46 36864 0 - Live 0xbfb9e000 (O)
+l2tp_netlink 24576 1 l2tp_ppp, Live 0xbfb97000
+l2tp_core 24576 2 l2tp_ppp,l2tp_netlink, Live 0xbfb90000
+ipcomp6 16384 0 - Live 0xbfb8b000
+xfrm6_tunnel 16384 1 ipcomp6, Live 0xbfab8000
+esp6 20480 0 - Live 0xbfb85000
+ah6 16384 0 - Live 0xbf9ce000
+nls_utf8 16384 0 - Live 0xbf1a9000
+nls_cp936 135168 0 - Live 0xbfb63000
+vxlan 49152 0 - Live 0xbf937000
+udp_tunnel 16384 3 wireguard,l2tp_core,vxlan, Live 0xbf1a0000
+ip6_udp_tunnel 16384 3 wireguard,l2tp_core,vxlan, Live 0xbf14a000
+ponmacfilter 20480 0 - Live 0xbf144000 (O)
+gpon_flow 94208 0 - Live 0xbfa5c000 (O)
+xpon_igmp 122880 0 - Live 0xbf99a000 (O)
+ponvlan 258048 1 xpon_igmp, Live 0xbf95a000 (O)
+xponmap 57344 1 gpon_flow, Live 0xbf94b000 (O)
+xpon_int 20480 0 - Live 0xbf0cb000 (PO)
+xpon 618496 6 ponmacfilter,xpon_igmp,ponvlan,xponmap, Live 0xbfacb000 (O)
+phy 303104 0 - Live 0xbf8ec000 (O)
+econet_bob 16384 0 - Live 0xbf039000 (O)
+mapfilter 53248 2 - Live 0xbfabd000 (O)
+8811_bbu_api 61440 0 - Live 0xbfaa8000 (PO)
+air_en8811h 24576 1 8811_bbu_api, Live 0xbfa9e000 (O)
+mdio_arht 16384 1 8811_bbu_api, Live 0xbfa99000 (O)
+secureupgrade 16384 0 - Live 0xbfa94000 (O)
+vxlan_hw_offload 24576 0 - Live 0xbfa89000 (O)
+l2tp_offload 20480 0 - Live 0xbfa7f000 (O)
+gre_hw_offload 20480 0 - Live 0xbfa75000 (O)
+loopdetect 20480 0 - Live 0xbf09a000 (PO)
+hw_nat 548864 1 - Live 0xbf9d5000 (PO)
+mt_whnat 69632 0 - Live 0xbf9bc000 (O)
+mt7916_ap 7589888 6 mt_whnat, Live 0xbf1ae000 (PO)
+qdma_wan 192512 1 xpon, Live 0xbf170000 (PO)
+eth_ephy 118784 0 - Live 0xbf152000 (PO)
+eth 233472 10 xpon_igmp,ponvlan,xpon,mdio_arht,vxlan_hw_offload,l2tp_offload,gre_hw_offload,loopdetect,hw_nat,eth_ephy, Live 0xbf10a000 (PO)
+hostadpt 20480 0 - Live 0xbf029000 (PO)
+npu 24576 0 - Live 0xbf093000 (PO)
+qdma_lan 225280 0 - Live 0xbf0d2000 (PO)
+ifc 172032 2 qdma_wan,qdma_lan, Live 0xbf0a0000 (PO)
+fe_core 192512 1 qdma_wan, Live 0xbf063000 (PO)
+sif 16384 1 phy, Live 0xbf05b000 (PO)
+tccicmd 32768 4 xpon,eth_ephy,eth,sif, Live 0xbf052000 (PO)
+ecnt_legacy_api 24576 5 xpon,phy,hw_nat,eth,tccicmd, Live 0xbf04b000 (O)
+module_sel 20480 0 - Live 0xbf023000 (PO)
+usb_storage 49152 0 - Live 0xbf03e000
+sd_mod 36864 0 - Live 0xbf02f000
+scsi_mod 106496 2 usb_storage,sd_mod, Live 0xbf008000
+gpio_button_hotplug 16384 1 tccicmd, Live 0xbf000000 (O)

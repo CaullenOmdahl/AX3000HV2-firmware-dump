@@ -4,7 +4,31 @@
 
 This archive contains a comprehensive firmware and system dump from an AX3000HV2 router running OpenWrt 21.02.1. The data was extracted for OpenWrt device development, GPL compliance analysis, and community contribution purposes.
 
-## Archive Contents: `complete_dump_20250817_020052.tar.gz` (104MB)
+## Archive Contents: `comprehensive_dump_20250817_031148.tar.gz` (23MB)
+
+## 🚀 NEW: OpenWrt Porting Data Collection
+
+**Added August 17, 2025** - Comprehensive data collection for OpenWrt device porting analysis.
+
+### OpenWrt Porting Assessment: **HIGH VIABILITY** ✅
+
+Based on extensive research and hardware analysis, this device shows excellent potential for OpenWrt porting:
+
+- ✅ **SoC Support**: Airoha EN7523 has existing OpenWrt support (airoha/generic target)
+- ✅ **Wireless Support**: MediaTek MT7916 supported via mt76 driver family  
+- ✅ **Memory Requirements**: 473MB RAM exceeds OpenWrt 2025 requirements
+- ✅ **Architecture**: ARMv7 Cortex-A53 well-supported in OpenWrt
+
+### OpenWrt Porting Data Package: `openwrt_porting_data/`
+
+Critical data collected for OpenWrt development:
+
+- **`OPENWRT_PORTING_ANALYSIS.md`** - Comprehensive porting analysis and recommendations
+- **`device_tree_raw.txt`** - Complete device tree information from /proc/device-tree
+- **`uboot_environment.txt`** - U-Boot environment and kernel boot parameters
+- **`gpio_pinmux_info.txt`** - GPIO pin assignments and LED configurations
+- **`switch_ethernet_config.txt`** - Ethernet switch and network interface mappings
+- **`additional_hardware_info.txt`** - I/O memory maps and hardware detection logs
 
 ## Device Information
 
@@ -39,111 +63,58 @@ This archive contains a comprehensive firmware and system dump from an AX3000HV2
 ### Critical Firmware Components
 
 #### MTD Partition Dumps
-- **bootloader.bin** (512KB) - U-Boot bootloader binary
-- **tclinux.bin** (40MB) - Complete firmware image
-- **kernel.bin** (22MB) - Linux kernel 5.4.55 binary
-- **rootfs.bin** (37MB) - Root filesystem image
-- **rootfs_data.bin** (8MB) - Data partition overlay
-- **art.bin** (3.5MB) - WiFi calibration data for MT7916 (CRITICAL)
+- **bootloader.bin** (512KB) - U-Boot bootloader binary dump
+- **kernel.bin** (22MB) - Linux kernel 5.4.55 binary dump  
+- **art.bin** (3.5MB) - WiFi calibration data for MT7916 (CRITICAL for wireless functionality)
 
-#### Additional Partitions
-- **tclinux_slave.bin** (29MB) - Backup firmware slot
-- **kernel_slave.bin** (25MB) - Backup kernel slot
-- **rootfs_slave.bin** (26MB) - Backup rootfs slot
-- **user_app.bin** (11MB) - User application partition
-- **fpt_data.bin** (5MB) - FPT specific data
-- **fpt_overlay.bin** (15MB) - FPT overlay partition
-
-### Hardware Information
+### Hardware and System Information
 
 #### System Details
 - **cpuinfo.txt** - ARM processor details and features
-- **meminfo.txt** - Memory configuration and usage
-- **kernel_version.txt** - Kernel build information
-- **dmesg_full.txt** - Complete boot log with hardware detection
-- **uboot_env.txt** - U-Boot environment variables
-
-#### Hardware Mapping
-- **iomem.txt** - I/O memory map for device tree creation
-- **interrupts.txt** - Hardware interrupt assignments
+- **system_info.txt** - Complete system information including memory, uptime, and hardware details
+- **kernel_details.txt** - Kernel command line, memory mapping, and interrupt assignments
+- **kernel_modules.txt** - Loaded kernel modules and dependencies
 - **mtd_info.txt** - MTD partition layout and sizes
+- **bootloader_hex_sample.txt** - Hexdump sample of bootloader for analysis
 
 ### Network and Wireless Configuration
 
-#### Network Configuration
-- **ip_addr.txt** - Network interface configuration
-- **bridge_info.txt** - Bridge setup and VLAN configuration
-- **arp_table.txt** - ARP cache entries
+#### Network Configuration  
+- **network_info.txt** - Complete network interface configuration and routing tables
 
 #### Wireless Configuration
-- **iwconfig.txt** - Wireless interface details
-- **iwinfo.txt** - MT7916 capabilities and status
-- **Wireless/** - MediaTek wireless driver configuration files
-  - **RT2860AP.dat** - 2.4GHz radio configuration
-  - **RT2860AP_AC.dat** - 5GHz radio configuration
-  - **l1profile.dat** - Wireless profile settings
-
-### System Configuration
-
-#### UCI Configuration
-- **uci_export.txt** - Complete UCI configuration dump
-- **etc_backup.tar.gz** - Full /etc directory backup
-
-#### Process and Module Information
-- **ps_busybox.txt** - Running processes snapshot
-- **lsmod.txt** - Loaded kernel modules
-- **available_modules.txt** - All available kernel modules
-- **proc_modules.txt** - Module dependencies and information
-
-### OpenWrt and GPL Compliance
-
-#### Build Information
-- **openwrt_release.txt** - OpenWrt version and build details
-- **kernel_config.txt** - Complete kernel configuration
-- **packages_installed.txt** - List of installed packages
-
-#### Boot and Runtime
-- **kernel_cmdline.txt** - Kernel boot parameters
-- **mount_info.txt** - Mounted filesystems
-- **filesystem_info.txt** - Device nodes and filesystem details
+- **uci_config_full.txt** - Complete UCI configuration including wireless settings
+- **wireless_config.tar.gz** - Complete wireless driver configuration archive containing:
+  - **etc/Wireless/RT2860AP/RT2860AP.dat** - 2.4GHz radio configuration
+  - **etc/Wireless/RT2860AP/DBDC_card0.dat** - Dual-band configuration
+  - **etc/Wireless/RT2860AP_AC/RT2860AP.dat** - 5GHz radio configuration  
+  - **etc/Wireless/RT2860AP_AC/RT30xxEEPROM.bin** - Wireless EEPROM data
+  - **etc/Wireless/l1profile.dat** - Wireless profile settings
 
 ## File Structure
 
 ```
-complete_dump_20250817_020052/
-├── README.md (this file)
-├── Firmware_Dumps/
-│   ├── bootloader.bin
-│   ├── tclinux.bin
-│   ├── kernel.bin
-│   ├── rootfs.bin
-│   ├── rootfs_data.bin
-│   ├── art.bin
-│   └── [other partition dumps]
-├── Hardware_Info/
-│   ├── cpuinfo.txt
-│   ├── meminfo.txt
-│   ├── dmesg_full.txt
-│   ├── iomem.txt
-│   └── interrupts.txt
-├── Network_Config/
-│   ├── ip_addr.txt
-│   ├── iwconfig.txt
-│   ├── iwinfo.txt
-│   └── bridge_info.txt
-├── System_Config/
-│   ├── uci_export.txt
-│   ├── etc_backup.tar.gz
-│   ├── lsmod.txt
-│   └── kernel_config.txt
-├── Wireless/
-│   ├── RT2860AP.dat
-│   ├── RT2860AP_AC.dat
-│   └── l1profile.dat
-└── GPL_Compliance/
-    ├── openwrt_release.txt
-    ├── packages_installed.txt
-    └── kernel_cmdline.txt
+comprehensive_dump_20250817_031148.tar.gz (23MB)
+├── art.bin (3.5MB) - WiFi calibration data for MT7916
+├── bootloader.bin (512KB) - U-Boot bootloader binary
+├── kernel.bin (22MB) - Linux kernel binary  
+├── bootloader_hex_sample.txt - Hexdump sample of bootloader
+├── cpuinfo.txt - ARM processor details and features
+├── kernel_details.txt - Kernel command line, memory mapping, interrupts
+├── kernel_modules.txt - Loaded kernel modules and dependencies
+├── mtd_info.txt - MTD partition layout and sizes
+├── network_info.txt - Network interface configuration and routing
+├── system_info.txt - System information, memory, uptime, hardware
+├── uci_config_full.txt - Complete UCI configuration
+└── wireless_config.tar.gz - Complete wireless driver configuration
+    └── etc/Wireless/
+        ├── RT2860AP/
+        │   ├── RT2860AP.dat - 2.4GHz radio configuration
+        │   └── DBDC_card0.dat - Dual-band configuration
+        ├── RT2860AP_AC/
+        │   ├── RT2860AP.dat - 5GHz radio configuration
+        │   └── RT30xxEEPROM.bin - Wireless EEPROM data
+        └── l1profile.dat - Wireless profile settings
 ```
 
 ## Potential OpenWrt Development Value
@@ -174,31 +145,32 @@ This dump may be useful for OpenWrt development efforts. It contains:
 ### Device Definition Creation
 1. Use **mtd_info.txt** for partition layout
 2. Reference **art.bin** for WiFi calibration preservation
-3. Analyze **dmesg_full.txt** for hardware initialization sequence
-4. Use **iomem.txt** and **interrupts.txt** for device tree creation
+3. Analyze **kernel_details.txt** for hardware initialization, memory mapping, and interrupts
+4. Use **system_info.txt** for hardware detection sequence
 
 ### Driver Development
-- **Wireless/** directory contains MT7916 driver configurations
-- **kernel_config.txt** shows enabled kernel features
-- **lsmod.txt** lists required kernel modules
+- **wireless_config.tar.gz** contains complete MT7916 driver configurations
+- **kernel_modules.txt** shows loaded modules and dependencies
+- **kernel.bin** provides complete kernel binary for analysis
 
 ### Build Configuration
-- **kernel_config.txt** provides complete kernel build settings
-- **packages_installed.txt** lists required OpenWrt packages
-- **openwrt_release.txt** contains build version information
+- **uci_config_full.txt** provides complete system configuration
+- **kernel_modules.txt** lists required kernel modules and dependencies
+- **system_info.txt** contains kernel version and build information
 
 ### Device Tree Creation
-- Use **iomem.txt** for memory mapping
-- Use **interrupts.txt** for IRQ assignments
-- Use **dmesg_full.txt** for hardware detection sequence
-- Use **kernel_cmdline.txt** for boot parameters
+- Use **kernel_details.txt** for memory mapping and IRQ assignments
+- Use **system_info.txt** for hardware detection sequence
+- Use **bootloader_hex_sample.txt** for boot sequence analysis
 
 ### Files of Potential Interest for OpenWrt Port
-1. **art.bin** - May be important for WiFi functionality
-2. **bootloader.bin** - For boot sequence understanding
-3. **kernel_config.txt** - For build configuration reference
+1. **art.bin** - Critical for WiFi functionality (MT7916 calibration data)
+2. **bootloader.bin** - For boot sequence understanding and U-Boot analysis
+3. **kernel.bin** - Complete kernel binary for reverse engineering
 4. **mtd_info.txt** - For partition layout information
-5. **Wireless/** - For MT7916 driver configuration reference
+5. **wireless_config.tar.gz** - For MT7916 driver configuration reference
+6. **kernel_modules.txt** - For understanding driver dependencies
+7. **system_info.txt** - For hardware detection and memory mapping
 
 ## Critical Files for WiFi Functionality
 
@@ -236,7 +208,7 @@ mtd11: 00380000 "art" (3.5MB)
 
 ### Extract Archive
 ```bash
-tar -xzf complete_dump_20250817_020052.tar.gz
+tar -xzf comprehensive_dump_20250817_031148.tar.gz
 ```
 
 ## Security and Privacy
@@ -266,11 +238,12 @@ This dump may assist with:
 
 ## Extraction Details
 
-- **Date**: August 17, 2025, 02:00 UTC
-- **Source**: AX3000HV2 at 10.1.100.2
-- **Method**: SSH extraction using BusyBox utilities
-- **Archive Size**: 104MB compressed
-- **Total Files**: 50+ individual dumps and configurations
+- **Date**: August 17, 2025, 03:11 UTC
+- **Source**: AX3000HV2 at 10.1.100.2 via SSH
+- **Method**: Direct MTD partition dumping and system information collection
+- **Archive Size**: 23MB compressed
+- **Total Files**: 12 files including critical MTD partitions and system configuration
+- **Key Components**: 3 MTD partition binaries, 8 system information files, 1 wireless configuration archive
 
 ## Community Contribution
 

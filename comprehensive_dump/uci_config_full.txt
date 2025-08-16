@@ -1,0 +1,2359 @@
+package Info_Ether
+
+config Common 'Common'
+	option LastUptime '150'
+
+config Ether 'Ether'
+	option Port1Status '1'
+	option Port2Status '0'
+	option Port3Status '0'
+	option Port4Status '0'
+	option Port1Speed '1000M'
+	option Port1Duplex 'Full'
+	option Port1CurrentBitRate '1000'
+	option Port2Speed 'Down'
+	option Port2Duplex 'Down'
+	option Port2CurrentBitRate '0'
+	option Port3Speed 'Down'
+	option Port3Duplex 'Down'
+	option Port3CurrentBitRate '0'
+	option Port4Speed 'Down'
+	option Port4Duplex 'Down'
+	option Port4CurrentBitRate '0'
+	option eth1txPkts '192'
+	option eth1rxPkts '536'
+	option eth2txPkts '0'
+	option eth2rxPkts '0'
+	option eth3txPkts '0'
+	option eth3rxPkts '0'
+	option eth4txPkts '0'
+	option eth4rxPkts '0'
+	option inOctets '105808'
+	option inUnicastPkts '35'
+	option inMulticastPkts '363'
+	option outOctets '50731'
+	option outUnicastPkts '37'
+	option outMulticastPkts '127'
+	option outErrors '0'
+	option txCollisionCnt '0'
+	option txUnderRunCnt '0'
+	option rxCrcErr '0'
+	option rxFrames '398'
+	option txFrames '164'
+	option brHost '1=b4:60:ed:0f:05:02,1=2a:66:1c:b8:93:6e,1=3c:b0:ed:bc:7e:57,1=d4:5d:64:d6:f7:f6,1=52:54:00:ee:01:c9,1=2c:be:eb:81:c4:ee,1=90:31:4b:78:80:39,1=18:de:50:e1:dc:cf,1=ac:67:84:8e:34:1c,1=18:de:50:14:bc:0f,1=28:7e:80:fd:17:66,1=94:83:c4:a2:c5:b2'
+
+package LanHost
+
+config Common 'Common'
+	option WirelessNum '0'
+	option LeaseNum '2'
+	option WiredNum '2'
+
+config Entry
+	option HostName 'Unknown'
+	option MAC '94:83:C4:A2:C5:B2'
+	option IP '10.1.100.1'
+	option InterfaceType 'Ethernet'
+	option ExpireDay '0'
+	option ExpireTime '0'
+	option AddressSrc 'Static'
+	option Port '1'
+	option TxRate '0'
+	option TxBytes '0'
+	option RxBytes '168005'
+	option RxRate '0'
+	option LastUptime '17671'
+
+config Entry
+	option HostName 'Unknown'
+	option MAC 'D4:5D:64:D6:F7:F6'
+	option IP '10.1.100.3'
+	option InterfaceType 'Ethernet'
+	option ExpireDay '0'
+	option ExpireTime '0'
+	option AddressSrc 'Static'
+	option Port '1'
+	option TxRate '0'
+	option TxBytes '0'
+	option RxBytes '801'
+	option RxRate '0'
+	option LastUptime '17671'
+
+package LanHost2
+
+config Common 'Common'
+	option LANHostMaxNumber '64'
+	option EnableStats '1'
+	option LANHostNumber '1'
+	option LastUptime '152'
+
+config Entry
+	option MAC '9483C4A2C5B2'
+	option ETHER_MAC '9483C4A2C5B2'
+	option IP '10.1.100.1'
+	option HostName 'Unknown'
+	option Port '1'
+	option ConnectionType '0'
+	option InterfaceType 'Ethernet'
+	option TxRate '0'
+	option RxRate '0'
+	option TxBytes '0'
+	option RxBytes '0'
+	option TxPkts '0'
+	option RxPkts '0'
+	option NegoRate '1000000'
+	option RxBw '1000000'
+	option TxBw '1000000'
+
+package MaxBandWidth
+
+config Common 'Common'
+	option add_num '0'
+
+package argon
+
+config global
+	option primary '#5e72e4'
+	option dark_primary '#483d8b'
+	option blur '10'
+	option blur_dark '10'
+	option transparency '0.5'
+	option transparency_dark '0.5'
+	option mode 'normal'
+	option bing_background '0'
+
+package boa_config
+
+config account_entry0 'account_entry0'
+	option Active 'Yes'
+	option username 'admin'
+	option web_passwd '1234'
+	option remote_user 'admin'
+	option remote_pwd 'Hbmt@_fpt123'
+	option Logged '0'
+	option Logoff '0'
+	option LoginIp 'null'
+	option display_mask 'FF FF FF FF FF FF FF FF FF'
+	option isLockState '0'
+	option LockTimes '0'
+	option curUserName 'null'
+	option LoginTimes '0'
+
+config webCurSet_entry 'webCurSet_entry'
+	option Logged '0'
+	option isOtherLogged '0'
+	option loginMac 'null'
+	option restrictLoggedMac 'null'
+	option CurrentAccess '0'
+
+config languageSwitch_entry 'languageSwitch_entry'
+	option languageType '1'
+
+package ct_storage
+
+config Threshold 'Threshold'
+	option packet_max_size_bytes '20971520'
+	option memory_threshold_kb '20480'
+
+config Entry 'Entry'
+	option enable '0'
+	option status '0'
+
+package ddns
+
+config ddns 'global'
+	option ddns_dateformat '%F %R'
+	option ddns_loglines '250'
+	option ddns_rundir '/var/run/ddns'
+	option ddns_logdir '/var/log/ddns'
+	option upd_privateip '1'
+
+config service 'myddns_ipv4'
+	option enabled '0'
+	option lookup_host 'yourhost.example.com'
+	option use_ipv6 '0'
+	option service_name 'no-ip.com'
+	option domain 'hbmt123-opwrt.ddns.net'
+	option username 'your_username'
+	option password 'your_password'
+	option ip_source 'network'
+	option ip_network 'wan'
+	option interface 'wan'
+	option use_syslog '2'
+	option check_unit 'minutes'
+	option force_unit 'minutes'
+	option retry_unit 'seconds'
+
+package dhcp
+
+config dnsmasq
+	option domainneeded '1'
+	option boguspriv '1'
+	option filterwin2k '0'
+	option localise_queries '1'
+	option rebind_protection '0'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option domain 'fpt'
+	option expandhosts '1'
+	option nonegcache '0'
+	option authoritative '1'
+	option readethers '1'
+	option leasefile '/tmp/dhcp.leases'
+	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+	option nonwildcard '1'
+	option localservice '1'
+	option ednspacket_max '1232'
+	option logqueries '1'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option start '2'
+	option limit '253'
+	option leasetime '24h'
+	option force '1'
+	option dhcpv4 'server'
+	option dhcpv6 'server'
+	option ra 'server'
+	option ra_slaac '1'
+	list ra_flags 'managed-config'
+	list ra_flags 'other-config'
+	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option maindhcp '0'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+
+package diag
+
+config diag_test 'diag_test'
+	option ping_other_enable '0'
+
+config trace_route 'trace_route'
+
+config tcpdump 'tcpdump'
+	option interface 'br-lan'
+
+config nslookup 'nslookup'
+
+package dropbear
+
+config dropbear
+	option PasswordAuth 'on'
+	option Port '22'
+
+package easycwmp
+
+config local
+	option enable '1'
+	option interface 'eth0'
+	option ip '192.168.1.120'
+	option port '7547'
+	option ubus_socket '/tmp/run/ubus/ubus.sock'
+	option date_format '%FT%T%z'
+	option username 'cpetr69'
+	option password 'cpetr69'
+	option authentication 'Digest'
+	option logging_level '3'
+
+config acs
+	option url 'http://acs2.fpt.net/cpe/'
+	option username 'acstr69'
+	option password 'acstr69'
+	option periodic_enable '1'
+	option periodic_interval '86400'
+	option periodic_time '0001-01-01T00:00:00Z'
+	option enablecwmp '1'
+	option cwmpretryinterval '5'
+	option cwmpretryintervalmultiplier '2000'
+	option upgradesmanaged '0'
+	option notification_interval '30'
+	option secret 'oXOFsML1Mc0WPzAE'
+	option http100continue_disable '1'
+
+config device
+	option description 'Home Gateway-Hisense'
+	option manufacturer 'Hisense'
+	option product_class 'AX3000HV2'
+	option modelname 'AX3000HV2'
+	option hardware_version 'C30-401'
+	option software_version 'FT6.11.032hv'
+	option oui '20BEB4'
+	option serial_number '20BEB420B9B6'
+
+config notifications
+	list active 'InternetGatewayDevice.DeviceInfo.SoftwareVersion'
+	list active 'InternetGatewayDevice.ManagementServer.ConnectionRequestURL'
+
+package epon
+
+config ONU 'ONU'
+	option NPort '8'
+	option Ports '4,0,2,0,2,2,0,0'
+	option HWVer 'ECNT-HW-V1.0'
+	option SWVer 'ECNT-SW-V1.0'
+
+package ethernet
+
+package external
+
+config ipping
+	option DiagnosticsState 'None'
+	option Interface 'InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1'
+	option Host 'www.baidu.com'
+	option NumberOfRepetitions '3'
+	option Timeout '1000'
+	option DataBlockSize '64'
+	option DSCP '0'
+	option SuccessCount '0'
+	option FailureCount '0'
+	option AverageResponseTime '0'
+	option MinimumResponseTime '0'
+	option MaximumResponseTime '0'
+
+config download
+	option DiagnosticsState 'None'
+	option Interface 'InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1'
+	option DownloadURL 'www.baidu.com'
+	option DSCP '0'
+	option EthernetPriority '0'
+	option ROMTime '0'
+	option BOMTime '0'
+	option EOMTime '0'
+	option TestBytesReceived '0'
+	option TotalBytesReceived '0'
+
+config nslookup
+	option DiagnosticsState 'None'
+	option Interface 'InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1'
+	option HostName 'www.baidu.com'
+	option DNSServer ' '
+	option Timeout '5000'
+	option NumberOfRepetitions '3'
+	option SuccessCount '0'
+	option ResultNumberOfEntries '0'
+
+config traceroute
+	option DiagnosticsState 'None'
+	option Interface 'InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1'
+	option Host ' '
+	option NumberOfTries '3'
+	option Timeout '5000'
+	option DataBlockSize '38'
+	option DSCP '0'
+	option MaxHopCount '30'
+	option ResponseTime '0'
+	option RouteHopsNumberOfEntries '0'
+
+config loadtime
+	option Network '0'
+	option LanHost '97'
+
+package factory
+
+config deviceinfo 'deviceinfo'
+	option swver 'v1'
+	option ModelName 'AX3000HV2'
+	option productclass 'AX3000HV2'
+	option manufacturerOUI '20BEB4'
+	option serialnum '20BEB420B9B6'
+	option hwver 'C30-401'
+	option barCode 'C578F1L552'
+	option webpwd 'Tuck3r4505'
+	option samepwd '1'
+
+package firewall
+
+config defaults
+	option syn_flood '1'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+	option url_filter_mode '0'
+
+config zone
+	option name 'lan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	list network 'lan'
+
+config zone
+	option name 'wan'
+	option input 'REJECT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+	option masq '1'
+	option mtu_fix '1'
+	list network 'wan6'
+
+config forwarding
+	option src 'lan'
+	option dest 'wan'
+
+config rule
+	option name 'Allow-DHCP-Renew'
+	option src 'wan'
+	option proto 'udp'
+	option dest_port '68'
+	option target 'ACCEPT'
+	option family 'ipv4'
+
+config rule
+	option name 'Allow-Ping'
+	option src 'wan'
+	option proto 'icmp'
+	option icmp_type 'echo-request'
+	option family 'ipv4'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-IGMP'
+	option src 'wan'
+	option proto 'igmp'
+	option family 'ipv4'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-DHCPv6'
+	option src 'wan'
+	option proto 'udp'
+	option src_ip 'fc00::/6'
+	option dest_ip 'fc00::/6'
+	option dest_port '546'
+	option family 'ipv6'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-MLD'
+	option src 'wan'
+	option proto 'icmp'
+	option src_ip 'fe80::/10'
+	list icmp_type '130/0'
+	list icmp_type '131/0'
+	list icmp_type '132/0'
+	list icmp_type '143/0'
+	option family 'ipv6'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-ICMPv6-Input'
+	option src 'wan'
+	option proto 'icmp'
+	list icmp_type 'echo-request'
+	list icmp_type 'echo-reply'
+	list icmp_type 'destination-unreachable'
+	list icmp_type 'packet-too-big'
+	list icmp_type 'time-exceeded'
+	list icmp_type 'bad-header'
+	list icmp_type 'unknown-header-type'
+	list icmp_type 'router-solicitation'
+	list icmp_type 'neighbour-solicitation'
+	list icmp_type 'router-advertisement'
+	list icmp_type 'neighbour-advertisement'
+	option limit '1000/sec'
+	option family 'ipv6'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-ICMPv6-Forward'
+	option src 'wan'
+	option dest '*'
+	option proto 'icmp'
+	list icmp_type 'echo-request'
+	list icmp_type 'echo-reply'
+	list icmp_type 'destination-unreachable'
+	list icmp_type 'packet-too-big'
+	list icmp_type 'time-exceeded'
+	list icmp_type 'bad-header'
+	list icmp_type 'unknown-header-type'
+	option limit '1000/sec'
+	option family 'ipv6'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-IPSec-ESP'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'esp'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-ISAKMP'
+	option src 'wan'
+	option dest 'lan'
+	option dest_port '500'
+	option proto 'udp'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Support-UDP-Traceroute'
+	option src 'wan'
+	option dest_port '33434:33689'
+	option proto 'udp'
+	option family 'ipv4'
+	option target 'REJECT'
+	option enabled 'false'
+
+config rule
+	option name 'Allow-ACS-Server'
+	list proto 'tcp'
+	option src 'wan'
+	list src_ip '118.69.241.62/32'
+	list src_ip '118.69.241.63/32'
+	list src_ip '118.69.241.37/32'
+	list src_ip '118.69.241.76/32'
+	option dest_port '7547'
+	option target 'ACCEPT'
+
+config include
+	option path '/etc/firewall.user'
+	option reload '0'
+
+config redirect
+	option name 'DMZ'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'all'
+	option enabled '0'
+	option extra '! -d224.0.0.0/4'
+
+config rule 'remote_access_80'
+	option name 'remote_access_80'
+	list proto 'tcp'
+	option src 'wan'
+	option dest_port '80'
+	option target 'ACCEPT'
+	option enabled '0'
+
+config rule 'remote_access_8080'
+	option name 'remote_access_8080'
+	list proto 'tcp'
+	option src 'wan'
+	option dest_port '8080'
+	option target 'ACCEPT'
+	option enabled '0'
+
+config rule 'remote_access_443'
+	option name 'remote_access_443'
+	list proto 'tcp'
+	option src 'wan'
+	option dest_port '443'
+	option target 'ACCEPT'
+	option enabled '0'
+
+config rule 'remote_access_22'
+	option name 'remote_access_22'
+	list proto 'tcp'
+	option src 'wan'
+	option dest_port '22'
+	option target 'ACCEPT'
+	option enabled '0'
+	option extra '-m conntrack --ctstate NEW'
+	option limit '3/min'
+
+config rule 'lan_access_22_accept'
+	option name 'lan_access_22_accept'
+	list proto 'tcp'
+	option src 'lan'
+	option dest_port '22'
+	option target 'ACCEPT'
+	option enabled '1'
+	option extra '-m conntrack --ctstate NEW'
+	option limit '3/min'
+
+config rule 'lan_access_22_drop'
+	option name 'lan_access_22_drop'
+	list proto 'tcp'
+	option src 'lan'
+	option dest_port '22'
+	option target 'DROP'
+	option enabled '1'
+	option extra '-m conntrack --ctstate NEW'
+
+config rule 'limit_v4_connections'
+	option name 'limit_v4_connections'
+	option family 'ipv4'
+	option proto 'all'
+	option src 'lan'
+	option dest 'wan'
+	option target 'REJECT'
+	option extra '-m conntrack --ctstate NEW -m connlimit --connlimit-above 1000'
+	option enabled '0'
+
+config rule 'limit_v6_connections'
+	option name 'limit_v6_connections'
+	option family 'ipv6'
+	option proto 'all'
+	option src 'lan'
+	option dest 'wan'
+	option target 'REJECT'
+	option extra '-m conntrack --ctstate NEW -m connlimit --connlimit-above 1000'
+	option enabled '0'
+
+config include 'miniupnpd'
+	option type 'script'
+	option path '/usr/share/miniupnpd/firewall.include'
+	option family 'any'
+	option reload '1'
+
+package firmware
+
+config recordInfo 'recordInfo'
+	option number '0'
+	option method '0'
+
+package fstab
+
+config global
+	option anon_swap '0'
+	option anon_mount '1'
+	option auto_swap '1'
+	option auto_mount '1'
+	option delay_root '5'
+	option check_fs '0'
+
+config mount
+	option target '/mnt/usb'
+	option device '/dev/sda1'
+	option fstype 'auto'
+	option options 'rw,sync'
+	option enabled '1'
+	option enabled_fsck '0'
+
+package gpon
+
+config SoftImage0 'SoftImage0'
+	option Version 'FT6.11.032hv'
+	option Valid '1'
+	option Committed '0'
+	option Active '0'
+
+config SoftImage1 'SoftImage1'
+	option Version 'FT6.11.032hv'
+	option Valid '1'
+	option Committed '1'
+	option Active '1'
+
+config ONU 'ONU'
+	option EmergencyState '0'
+	option MaxPorts '8'
+	option PortList1 '48,248,47,47,47,47,32,00'
+	option StrictPPTPEthUniSlot '1'
+	option PortMap 'eth0.1,47,0 eth0.2,47,0 eth0.3,47,0 eth0.4,47,0'
+	option OMCCVersion 'A0'
+
+config common 'common'
+	option OMCI_SoftWare_Image_State 'SOFTWARE_IMAGE_STATE_S3_1'
+
+package gpon_raw
+
+config SoftImage0 'SoftImage0'
+	option Version 'ECNT-SW-V1.0'
+	option Committed '1'
+	option Active '1'
+	option Valid '1'
+
+config SoftImage1 'SoftImage1'
+	option Version 'ECNT-SW-V1.0'
+	option Committed '0'
+	option Active '0'
+	option Valid '1'
+
+config ONU 'ONU'
+	option EmergencyState '0'
+	option MaxPorts '8'
+	option PortList1 '48,248,47,47,47,47,32,00'
+	option StrictPPTPEthUniSlot '1'
+	option PortMap 'eth0.1,47,0 eth0.2,47,0 eth0.3,47,0 eth0.4,47,0'
+	option OMCCVersion 'A0'
+
+config common 'common'
+	option OMCI_SoftWare_Image_State 'SOFTWARE_IMAGE_STATE_S0_0'
+
+package gpon_status
+
+config ddm 'ddm'
+	option temperature '0'
+	option supply_voltage '0'
+	option tx_bias_current '0'
+	option tx_power '0'
+	option rx_power '0'
+
+config ploam 'ploam'
+	option link_status 'down'
+	option onu_state 'O1'
+
+config traffic 'traffic'
+	option status 'down'
+
+package helpers
+
+config helper
+	option name 'amanda'
+	option description 'Amanda backup and archiving proto'
+	option module 'nf_conntrack_amanda'
+	option family 'any'
+	option proto 'udp'
+	option port '10080'
+
+config helper
+	option name 'ftp'
+	option description 'FTP passive connection tracking'
+	option module 'nf_conntrack_ftp'
+	option family 'any'
+	option proto 'tcp'
+	option port '21'
+
+config helper
+	option name 'RAS'
+	option description 'RAS proto tracking'
+	option module 'nf_conntrack_h323'
+	option family 'any'
+	option proto 'udp'
+	option port '1719'
+
+config helper
+	option name 'Q.931'
+	option description 'Q.931 proto tracking'
+	option module 'nf_conntrack_h323'
+	option family 'any'
+	option proto 'tcp'
+	option port '1720'
+
+config helper
+	option name 'irc'
+	option description 'IRC DCC connection tracking'
+	option module 'nf_conntrack_irc'
+	option family 'ipv4'
+	option proto 'tcp'
+	option port '6667'
+
+config helper
+	option name 'netbios-ns'
+	option description 'NetBIOS name service broadcast tracking'
+	option module 'nf_conntrack_netbios_ns'
+	option family 'ipv4'
+	option proto 'udp'
+	option port '137'
+
+config helper
+	option name 'pptp'
+	option description 'PPTP VPN connection tracking'
+	option module 'nf_conntrack'
+	option family 'ipv4'
+	option proto 'tcp'
+	option port '1723'
+
+config helper
+	option name 'sane'
+	option description 'SANE scanner connection tracking'
+	option module 'nf_conntrack_sane'
+	option family 'any'
+	option proto 'tcp'
+	option port '6566'
+
+config helper
+	option name 'sip'
+	option description 'SIP VoIP connection tracking'
+	option module 'nf_conntrack_sip'
+	option family 'any'
+	option proto 'tcpudp'
+	option port '5060'
+
+config helper
+	option name 'snmp'
+	option description 'SNMP monitoring connection tracking'
+	option module 'nf_conntrack_snmp'
+	option family 'ipv4'
+	option proto 'udp'
+	option port '161'
+
+config helper
+	option name 'tftp'
+	option description 'TFTP connection tracking'
+	option module 'nf_conntrack_tftp'
+	option family 'any'
+	option proto 'udp'
+	option port '69'
+
+config helper
+	option name 'rtsp'
+	option description 'RTSP connection tracking'
+	option module 'nf_conntrack_rtsp'
+	option family 'ipv4'
+	option proto 'tcp'
+	option port '554'
+
+package igmpproxy
+
+config igmpproxy
+	option quickleave '1'
+
+config phyint
+	option network 'iptv'
+	option zone 'wan'
+	option direction 'upstream'
+	list altnet '0.0.0.0/0'
+
+config phyint
+	option network 'lan'
+	option zone 'lan'
+	option direction 'downstream'
+
+package luci
+
+config core 'main'
+	option lang 'auto'
+	option resourcebase '/luci-static/resources'
+	option ubuspath '/ubus/'
+	option mediaurlbase '/luci-static/argon'
+
+config extern 'flash_keep'
+	option uci '/etc/config/'
+	option dropbear '/etc/dropbear/'
+	option openvpn '/etc/openvpn/'
+	option passwd '/etc/passwd'
+	option opkg '/etc/opkg.conf'
+	option firewall '/etc/firewall.user'
+	option uploads '/lib/uci/upload/'
+
+config internal 'languages'
+
+config internal 'sauth'
+	option sessionpath '/tmp/luci-sessions'
+	option sessiontime '3600'
+
+config internal 'ccache'
+	option enable '1'
+
+config internal 'themes'
+	option Bootstrap '/luci-static/bootstrap'
+	option Material '/luci-static/material'
+	option OpenWrt2020 '/luci-static/openwrt2020'
+	option Argon '/luci-static/argon'
+
+config internal 'apply'
+	option rollback '90'
+	option holdoff '4'
+	option timeout '5'
+	option display '1.5'
+
+config internal 'diag'
+	option dns 'openwrt.org'
+	option ping 'openwrt.org'
+	option route 'openwrt.org'
+
+package lxc-auto
+
+package mesh
+
+config action 'action'
+	option device 'action'
+	option enable '1'
+	option role '1'
+	option bs20_enable '0'
+
+config bsscfg 'bsscfg'
+	option device 'bsscfg'
+
+config mapcfg 'mapcfg'
+	option device 'mapcfg'
+	option map_ver 'R2'
+	option map_controller_alid '20:be:b4:20:b9:b6'
+	option map_agent_alid '20:be:b4:20:b9:b6'
+	option mesh_bss 'MESH_BH_20beb420b9b6'
+	option mesh_band '5G'
+	option bss_config_priority 'ra0;ra1;ra2;ra3;ra4;ra5;ra6;ra7;rai0;rai1;rai2;rai3;rai4;rai5;rai6;rai7'
+
+config mapdcfg 'mapdcfg'
+	option device 'mapdcfg'
+	option ChPlanningEnable '0'
+	option NetworkOptimizationEnabled '0'
+	option NtwrkOptBootupWaitTime '45'
+	option NtwrkOptConnectWaitTime '15'
+	option NtwrkOptDisconnectWaitTime '10'
+	option NtwrkOptPeriodicity '3600'
+	option NetworkOptimizationScoreMargin '100'
+	option ChPlanningEnableR2 '0'
+	option NtwrkOptPostCACTriggerTime '25'
+	option NtwrkOptDataCollectionTime '90'
+	option NetwrkOptPrefer5Gover2G '0'
+	option NetwrkOptPrefer5Gover2GRetryCnt '0'
+	option CentralizedSteering '1'
+
+config steercfg 'steercfg'
+	option device 'steercfg'
+	option LowRSSIAPSteerEdge_RE '30'
+	option CUOverloadTh_2G '95'
+	option CUOverloadTh_5G_L '98'
+	option CUOverloadTh_5G_H '98'
+	option PHYBasedSelection '0'
+	option MCSRateXingThreshold_DG '6000'
+	option MCSRateXingThreshold_UG '50000'
+	option RSSISteeringEdge_DG '-30'
+	option RSSISteeringEdge_UG '20'
+	option RSSIRateXingThreshold_DG '25'
+	option RSSIRateXingThreshold_UG '30'
+	option MinRSSIOverload '20'
+	option MinRssiIncTh_Root '5'
+	option MinRssiIncTh_RE '10'
+	option MinRssiIncTh_Peer '10'
+	option ActivityThreshold '60000000'
+	option MaxClientOverloaded '100'
+	option SteeringProhibitTime '1'
+	option BTMSteeringProhibitTime '1'
+	option SteeringUnfriendlyTime '1'
+	option BTMUnfriendlyTime '0'
+	option ChPlanningR2MonitorTimeoutSecs '300'
+	option LowRSSIAPSteerEdge_root '20'
+	option MetricPolicyRcpi_24G '75'
+	option MetricPolicyRcpi_5GL '75'
+	option MetricPolicyRcpi_5GH '75'
+
+config wappcfg 'wappcfg'
+	option device 'wappcfg'
+	option IP '10.1.100.2'
+	option bss_config_priority 'ra0;ra1;ra2;ra3;ra4;ra5;ra6;ra7;rai0;rai1;rai2;rai3;rai4;rai5;rai6;rai7'
+
+config bsscfg_iface 'default_bsscfg_0'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_1'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_2'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_3'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_4'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_5'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_6'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_7'
+	option device 'radio0'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '1'
+	option frontHaul '0'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_8'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_9'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_10'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_11'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_12'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_13'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_14'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '0'
+	option frontHaul '1'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config bsscfg_iface 'default_bsscfg_15'
+	option device 'radio1'
+	option al_mac 'ff:ff:ff:ff:ff:ff'
+	option backhaul '1'
+	option frontHaul '0'
+	option VlanID '4095'
+	option PrimaryVlan '0'
+
+config dat 'dat'
+
+config common 'common'
+	option bw_flag '1'
+	option bandsteer_switch '1'
+	option low_rssi_root_flag '1'
+	option bss_max_idle_flag '1'
+
+config apclibh_iface 'default_apclibh_iface0'
+	option device 'radio1'
+
+config apclibh_iface 'default_apclibh_iface1'
+	option device 'radio1'
+
+config Radio2gbssinfo_iface 'default_Radio2gbssinfo_iface0'
+	option device 'radio0'
+
+config Radio5gbssinfo_iface 'default_Radio5gbssinfo_iface0'
+	option device 'radio1'
+
+package mesh_topo
+
+config control 'control'
+	option role 'None'
+	option num '0'
+	option time '0'
+
+config device
+	option role 'None'
+	option band '0'
+
+package migration_info
+
+config Entry 'Entry'
+	option migration_err_reason 'None'
+	option last_version 'FT6.11.032hv'
+	option migration_direction 'factorydo'
+
+package minidlna
+
+config minidlna 'config'
+	option enabled '0'
+	option user 'minidlna'
+	option port '8200'
+	option interface 'br-lan'
+	option friendly_name 'OpenWrt DLNA Server'
+	option db_dir '/var/run/minidlna'
+	option inotify '1'
+	option enable_tivo '0'
+	option wide_links '0'
+	option strict_dlna '0'
+	option notify_interval '900'
+	option serial '12345678'
+	option model_number '1'
+	option root_container '.'
+	list media_dir '/mnt'
+	option album_art_names 'Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg'
+
+package mirror
+
+config wan2lan 'wan2lan'
+	option active '0'
+
+package mqtt
+
+config switch 'switch'
+	option enable '1'
+
+package network
+
+config interface 'loopback'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+	option lastchange '2005'
+	option device 'lo'
+
+config interface 'lan'
+	option force_link '1'
+	option proto 'static'
+	option ip6assign '60'
+	option device 'br-lan'
+	option ipaddr '10.1.100.2'
+	option netmask '255.255.0.0'
+	option gateway '10.1.100.1'
+	option dns '10.1.100.1'
+
+config xpon_vlan 'xpon_vlan'
+	option vlan_id '10'
+
+config xpon_auth 'xpon_auth'
+	option pon_mode 'GPON'
+	option auth_type_g 'sn'
+	option gpon_sn_auth_type 'ascii'
+	option sn_ascii_password 'xxxx'
+	option sn 'ZTEG10125280'
+	option loid 'mtk1234'
+	option loidPasswd '1111'
+	option def_setting '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'eth0.1'
+	list ports 'eth0.2'
+	list ports 'eth0.3'
+	list ports 'eth0.4'
+	option igmp_snooping '1'
+	option hash_max '4096'
+
+config device
+	option type '8021q'
+	option ifname 'pon'
+
+config device 'guest_vlan'
+	option name 'eth0.9'
+	option ifname 'eth0'
+	option vid '9'
+	option type '8021q'
+
+package network_factory
+
+config interface 'loopback'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+	option lastchange '2005'
+	option device 'lo'
+
+config interface 'lan'
+	option force_link '1'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+	option device 'br-lan'
+
+config xpon_vlan 'xpon_vlan'
+	option vlan_id '10'
+
+config xpon_auth 'xpon_auth'
+	option pon_mode 'GPON'
+	option auth_type_g 'sn'
+	option gpon_sn_auth_type 'ascii'
+	option sn_ascii_password 'xxxx'
+	option sn 'ZTEG10125280'
+	option loid 'mtk1234'
+	option loidPasswd '1111'
+	option def_setting '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	option igmp_snooping '1'
+	option hash_max '4096'
+	list ports 'eth0.1'
+	list ports 'eth0.2'
+	list ports 'eth0.3'
+	list ports 'eth0.4'
+	list ports 'pon.41'
+
+config device
+	option type '8021q'
+	option ifname 'pon'
+	option vid '41'
+	option name 'pon.41'
+
+package network_release
+
+config interface 'loopback'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+	option lastchange '2005'
+	option device 'lo'
+
+config interface 'lan'
+	option force_link '1'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+	option device 'br-lan'
+
+config xpon_vlan 'xpon_vlan'
+	option vlan_id '10'
+
+config xpon_auth 'xpon_auth'
+	option pon_mode 'GPON'
+	option auth_type_g 'sn'
+	option gpon_sn_auth_type 'ascii'
+	option sn_ascii_password 'xxxx'
+	option sn 'ZTEG10125280'
+	option loid 'mtk1234'
+	option loidPasswd '1111'
+	option def_setting '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'eth0.1'
+	list ports 'eth0.2'
+	list ports 'eth0.3'
+	list ports 'eth0.4'
+	option igmp_snooping '1'
+	option hash_max '4096'
+
+config device
+	option type '8021q'
+	option ifname 'pon'
+
+config interface 'wan'
+	option proto 'pppoe'
+	option device 'pon'
+	option username 'fpt'
+	option password 'fpt'
+	option ipv6 'auto'
+	option reqaddress 'none'
+	option connmode 'Connect_Keep_Alive'
+	option keepalive '4 15'
+	option mtu_ex '0'
+
+config interface 'iptv'
+	option proto 'static'
+	option device 'pon'
+
+package omcproxy
+
+package pon
+
+config xpon_vlan 'xpon_vlan'
+	option vlan_id '10'
+
+config xpon_auth 'xpon_auth'
+	option pon_mode 'GPON'
+	option auth_type_g 'sn'
+	option gpon_sn_auth_type 'ascii'
+	option sn_ascii_password 'xxxx'
+	option loid 'mtk1234'
+	option loidPasswd '1111'
+	option sn 'FPTH252ACD49'
+	option def_sn 'FPTH252ACD49'
+	option def_setting '0'
+
+package port_trigger
+
+package qos
+
+config Common 'Common'
+	option Active '0'
+	option UplinkBandwidth '0'
+	option Discpline 'SP'
+	option QueueWeight1 '1'
+	option QueueWeight2 '1'
+	option QueueWeight3 '1'
+	option QueueWeight4 '1'
+	option QueueMask1 '1'
+	option QueueMask2 '1'
+	option QueueMask3 '1'
+	option QueueMask4 '1'
+	option ForceBW '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+config Entry
+	option Active '0'
+
+package reboot
+
+config recordInfo 'recordInfo'
+	option reason '0'
+	option number '7'
+
+config record
+	option RebootReason 'DGASP'
+	option Time '1970-01-01T07:13:42'
+
+config record
+	option Time '2025-08-16T16:27:14'
+	option RebootReason 'DGASP'
+
+config record
+	option Time '2025-08-16T17:20:46'
+	option RebootReason 'OTHER'
+
+config record
+	option RebootReason 'DGASP'
+	option Time '1970-01-01T07:13:30'
+
+config record
+	option Time '1970-01-01T07:02:30'
+	option RebootReason 'DGASP'
+
+config record
+	option Time '1970-01-01T07:02:30'
+	option RebootReason 'DGASP'
+
+config record
+	option RebootReason 'DGASP'
+	option Time '1970-01-01T07:13:31'
+
+package rpcd
+
+config rpcd
+	option socket '/var/run/ubus/ubus.sock'
+	option timeout '30'
+
+config login
+	option username 'admin'
+	option password '$p$admin'
+	list read '*'
+	list write '*'
+
+config login_console 'login_console'
+	option username 'admin'
+	option password 'hbmt@_fpt'
+
+config login_telnet 'login_telnet'
+	option active '0'
+	option username 'admin'
+	option password 'hbmt@_fpt'
+
+config login_ssh 'login_ssh'
+	option username 'hislogin'
+	option password 'hxkd8!3719@583at'
+
+package speedtest
+
+config downstream 'downstream'
+	option mask '255.255.255.0'
+	option destip '192.168.40.249'
+	option destport '80'
+	option gateway '192.168.50.1'
+	option filename '1G.rar'
+	option rate1 '0'
+	option rate2 '0'
+	option rate3 '0'
+	option rate4 '0'
+	option rate5 '0'
+	option rate6 '0'
+	option rate7 '0'
+	option rate8 '0'
+	option rate9 '0'
+	option rate10 '0'
+	option rate11 '0'
+	option rate12 '0'
+	option rate13 '0'
+	option rate14 '0'
+	option rate15 '0'
+	option wandev 'pon.99'
+
+config upstream 'upstream'
+	option mask '255.255.255.0'
+	option destip '192.168.40.249'
+	option wandev 'pon.99'
+	option gateway '192.168.50.1'
+	option destport '80'
+	option rate1 '0'
+	option rate2 '0'
+	option rate3 '0'
+	option rate4 '0'
+	option rate5 '0'
+	option rate6 '0'
+	option rate7 '0'
+	option rate8 '0'
+	option rate9 '0'
+	option rate10 '0'
+	option rate11 '0'
+	option rate12 '0'
+	option rate13 '0'
+	option rate14 '0'
+	option rate15 '0'
+
+package statistics
+
+config pon 'pon'
+	option TxFrameCnt '0'
+	option TxFrameLen '0'
+	option TxMulticastCnt '0'
+	option TxBroadcastCnt '0'
+	option TxDropCnt '0'
+	option TxLess64Cnt '0'
+	option RxFrameCnt '0'
+	option RxFrameLen '0'
+	option RxMulticastCnt '0'
+	option RxBroadcastCnt '0'
+	option RxCrcCnt '0'
+	option RxLess64Cnt '0'
+
+package system
+
+config system
+	option hostname 'OpenWrt'
+	option ttylogin '1'
+	option log_size '64'
+	option urandom_seed '0'
+	option log_remote '0'
+	option log_ip 'bblogs.fpt.vn'
+	option log_port '514'
+	option log_proto 'udp'
+	option conloglevel '7'
+	option remote_level '7'
+	option zonename 'Asia/Ho Chi Minh'
+	option timezone '<+07>-7'
+	option cronloglevel '5'
+
+config timeserver 'ntp'
+	list server 'vn.pool.ntp.org'
+	list server 'asia.pool.ntp.org'
+	list server '2.openwrt.pool.ntp.org'
+	list server '3.openwrt.pool.ntp.org'
+	list server 'time.google.com'
+	list server 'pool.ntp.org'
+
+config reset_button
+	option button 'BTN_0'
+	option action 'released'
+	option handler 'sys led on && prolinecmd factorymode set disable && prolinecmd restore default'
+	option min '10'
+	option max '30'
+
+config wps_button
+	option button 'wps'
+	option action 'released'
+	option handler 'echo wps button pushed > /dev/ttyS0 && echo 2 > /tmp/wps_button'
+	option min '3'
+	option max '30'
+
+config RebootTimer 'RebootTimer'
+	option Enable '0'
+	option StartTime '00:00'
+	option EndTime '00:00'
+	option Mon '0'
+	option Tue '0'
+	option Wed '0'
+	option Thu '0'
+	option Fri '0'
+	option Sat '0'
+	option Sun '0'
+
+package tcpdump
+
+config pktcap 'cap_boot'
+	option file_count '5'
+	option file_size '0.1'
+	option no_name_resolution '1'
+	option postrotate_command '1'
+	option compress_max '5'
+	option file_name 'cap_boot.pcap'
+	list expression 'pppoed or (pppoes and (not ppp[0:2] = 0x0057) and (not ppp[0:2] = 0x0021) and (not (ppp[2] = 0x09 or ppp[2] = 0x0a)))'
+	list expression 'igmp'
+	list expression 'port 67 or port 68'
+	list type 'PPPoE'
+	list type 'IGMP'
+	list type 'DHCP'
+	list interface 'pon'
+	list interface 'any'
+	list interface 'any'
+	list caping_cmd 'NULL'
+	list caping_cmd 'NULL'
+	list caping_cmd 'NULL'
+
+config pktcap 'cap_once'
+	option duration '6'
+	option file_count '1'
+	option no_name_resolution '1'
+	option postrotate_command '0'
+	option compress_once '1'
+	option file_name 'cap_once.pcap'
+	list expression 'port 53'
+	list type 'DNS'
+	list interface 'any'
+	list caping_cmd '/usr/bin/nslookup www.google.com'
+
+package ucitrack
+
+config network
+	option init 'network'
+	list affects 'dhcp'
+
+config wireless
+	list affects 'network'
+
+config firewall
+	option init 'firewall'
+	list affects 'luci-splash'
+	list affects 'qos'
+	list affects 'miniupnpd'
+
+config olsr
+	option init 'olsrd'
+
+config dhcp
+	option init 'dnsmasq'
+	list affects 'odhcpd'
+
+config odhcpd
+	option init 'odhcpd'
+
+config dropbear
+	option init 'dropbear'
+
+config httpd
+	option init 'httpd'
+
+config fstab
+	option exec '/sbin/block mount'
+
+config qos
+	option init 'qos'
+
+config system
+	option init 'led'
+	option exec '/etc/init.d/log reload'
+	list affects 'luci_statistics'
+	list affects 'dhcp'
+
+config luci_splash
+	option init 'luci_splash'
+
+config ntpclient
+	option init 'ntpclient'
+
+config samba
+	option init 'samba'
+
+config tinyproxy
+	option init 'tinyproxy'
+
+config voip
+	option init 'voip'
+
+config minidlna 'minidlna'
+
+config upnpd
+	option init 'miniupnpd'
+
+package uhttpd
+
+config uhttpd 'main'
+	list listen_http '0.0.0.0:80'
+	list listen_http '[::]:80'
+	list listen_https '0.0.0.0:8443'
+	list listen_https '[::]:8443'
+	option redirect_https '0'
+	option home '/www'
+	option rfc1918_filter '1'
+	option max_requests '3'
+	option max_connections '100'
+	option cert '/etc/uhttpd.crt'
+	option key '/etc/uhttpd.key'
+	option cgi_prefix '/cgi-bin'
+	list lua_prefix '/cgi-bin/luci=/usr/lib/lua/luci/sgi/uhttpd.lua'
+	option script_timeout '60'
+	option network_timeout '30'
+	option http_keepalive '20'
+	option tcp_keepalive '1'
+	option ubus_prefix '/ubus'
+	option active '1'
+
+config cert 'defaults'
+	option days '730'
+	option key_type 'ec'
+	option bits '2048'
+	option ec_curve 'P-256'
+	option country 'ZZ'
+	option state 'Somewhere'
+	option location 'Unknown'
+	option commonname 'OpenWrt'
+
+package upnpd
+
+config upnpd 'config'
+	option enabled '1'
+	option enable_natpmp '1'
+	option enable_upnp '1'
+	option secure_mode '1'
+	option log_output '0'
+	option download '20480'
+	option upload '2048'
+	option internal_iface 'lan'
+	option port '5000'
+	option upnp_lease_file '/var/upnp.leases'
+	option uuid '94bfd16f-b7dd-4f50-bb4e-078b69b836d2'
+
+config perm_rule
+	option action 'allow'
+	option ext_ports '1024-65535'
+	option int_addr '0.0.0.0/0'
+	option int_ports '1024-65535'
+	option comment 'Allow high ports'
+
+config perm_rule
+	option action 'deny'
+	option ext_ports '0-65535'
+	option int_addr '0.0.0.0/0'
+	option int_ports '0-65535'
+	option comment 'Default deny'
+
+package voip
+
+config VoIPSysParam_Common 'VoIPSysParam_Common'
+	option SC_SYS_CFG_MAX_CALL '4'
+	option SC_SYS_CFG_MAX_ACCT '2'
+	option SC_SYS_CFG_MAX_LINE '2'
+	option SC_SYS_CFG_MAX_CALL_PER_ACCT '2'
+	option SlicFXSNum '2'
+	option SlicFXONum '0'
+	option SC_SYS_LED_CFG '0'
+	option SC_SYS_SIP_T1_INTERVAL '1000'
+	option SC_SYS_SIP_TRANSPORT_TYPE '0'
+	option SC_SYS_SPEED_UP_DIALING '1'
+	option SC_SF_CS_QOS '120000'
+	option SC_SF_CS_TOS '0'
+	option SC_SF_CS_SRC_PORT '1'
+	option SC_SF_CS_DST_PORT '1'
+	option SC_SF_CS_SRC_IP '1'
+	option SC_SF_CS_DST_IP '1'
+	option SC_FAX_LEC_FORCE_OFF '1'
+	option SC_FAX_PASSTHRU_PCMU '0'
+	option SC_FAX_ONLY_TIMER '5'
+	option SC_FAX_REINV_RX '1'
+	option SC_MEDIA_CODEC_G726_16_PT '96'
+	option SC_MEDIA_CODEC_G726_40_PT '99'
+	option SC_MEDIA_CODEC_ILBC_PT '104'
+	option SC_MEDIA_CODEC_TELEVT_PT '101'
+	option SC_MEDIA_CODEC_G723_FMTP '0'
+	option SC_MEDIA_CODEC_SINGLE_CODEC '1'
+	option SC_EMERG_ENABLE '1'
+	option SC_EMERG_REGISTRATION '1'
+	option SC_EMERG_TIMER_WMX_CONNECT '60'
+	option SC_EMERG_FORCE_ACCT_SIP_PXY_ADDRWMX_AUTO_RECONN '3'
+	option SC_FTR_SERVICE_ENABLE '1'
+	option SC_FTR_CUSTOMER_TYPE '5'
+	option SC_FTR_HF_AND_DIGIT_ENABLE '1'
+	option SC_FTR_HF_DIGIT_TIMER '3'
+	option SC_FTR_AUTO_RETRV_DIAL_FAIL '1'
+	option SC_FTR_AUTO_RETRV_DIAL_TIMEOUT '1'
+	option SC_PRV_WMX_MS_INIT_SF '0'
+	option SC_PRV_SDP_RM_REJ_ATTRS '1'
+	option SC_DBG_PRINT_SIP_MSG '0'
+	option SC_FAX_T38_LEC_ON '0'
+	option SC_FAX_T38_VERSION '0'
+	option SC_FAX_T38_MAXRATE '5'
+	option SC_FAX_T38_ECC_TYPE '1'
+	option SC_FAX_T38_RATE_MGNT '2'
+	option SC_FAX_T38_OPMODE '0'
+	option SC_SYS_SIP_SUPPORTED '100rel,timer'
+	option SC_SYS_SIP_PRIORITY_URGENT_NUMS '1000,2000,3000'
+	option SC_SYS_SIP_PRIORITY_NORMAL_NUMS '4000,5000'
+	option SC_SYS_SIP_PRIO_NON_URGENT_NUM '6000,7000'
+	option SC_SYS_SPEED_UP_DIALING_STR '#'
+	option SC_SYS_MAGIC_NUM '190915'
+	option SC_EMERG_NUM_GENERIC '112,911,119,110,120'
+	option SC_EMERG_NUM_POLICE '112,119,911'
+	option SC_EMERG_NUM_MEDICAL '120,911'
+	option SC_EMERG_NUM_FIRE '119,911'
+	option SC_FTR_HF_CONF_DELETE_STR '2'
+	option SC_FTR_HF_BG_SESS_HIGH_PRI 'w'
+	option SC_FTR_HOLD_STR '*52#'
+	option SC_FTR_HOLD_AND_ACCEPT_STR '*3#'
+	option SC_FTR_HOLD_AND_RETRIEVE_STR '*4#'
+	option SC_FTR_RELEASE_AND_ACCEPT_STR '*1#'
+	option SC_FTR_RELEASE_AND_RETRIEVE_STR '*2#'
+	option SC_FTR_CONF_DELETE_STR '#41#'
+	option SC_FTR_RELEASE_HOLD_STR '*8#'
+	option SC_FTR_REJECT_WAIT_STR '*9#'
+	option SC_FTR_1ST_HF_AND_DIGIT '0,*9#,*8#'
+	option SC_FTR_2ND_HF_AND_DIGIT '1,*1#,*2#'
+	option SC_FTR_3RD_HF_AND_DIGIT '2,*3#,*4#'
+	option SC_FTR_4TH_HF_AND_DIGIT '3,*333'
+	option SC_FTR_5TH_HF_AND_DIGIT '4,*12#'
+	option SC_FTR_6TH_HF_AND_DIGIT '4,*12#'
+	option SC_FTR_7TH_HF_AND_DIGIT '4,*12#'
+	option SC_FTR_8TH_HF_AND_DIGIT '4,*12#'
+	option SC_FTR_9TH_HF_AND_DIGIT '4,*12#'
+	option SC_PRV_WMX_BSID_FMT 'B28C7000005B69643A31303037305D2056'
+	option SC_PRV_SDP_RESTORE_ATTR 'silenceSupp,silencesupp,ecan,X-fax,x-fax,fax,X-modem,x-modem,modem,Fax,Modem'
+	option SC_SYS_CFG_WAN_IP '0.0.0.0'
+	option SC_SYS_TEV_EVENT_ENABLE '7'
+	option SC_SYS_VOICE_JB_TYPE '1'
+	option SC_SYS_VOICE_JB_LEN '200'
+	option SC_FAX_PASSTHRU_LEC_ON '0'
+	option SC_SYS_SIP_REREG_TIME '450'
+	option SC_LINE_CID_DISP '1'
+	option SC_LINE_CID_PWR '0'
+	option SC_LINE_FLASH_DETECT_UP_LV '700'
+	option SC_LINE_FLASH_DETECT_DN_LV '700'
+
+config VoIPAdvanced_Common 'VoIPAdvanced_Common'
+	option NumberMatchMode '2'
+	option SupportSpecCharTransfer '1'
+	option VoIPLedBlinkMode '0'
+	option PolarityReversalMode '0'
+	option EndCharHandleMode '0'
+	option OptionsSericeMode '0'
+	option SC_MEDIA_CODEC_G726_24_PT '79'
+	option SC_MEDIA_CODEC_G726_32_PT '80'
+	option SIPPTimeSepEnable '0'
+	option SIPCallerIdRemoveCountryCode '0'
+	option MsgWithUserEnable '0'
+	option RegistrationExpire '1800'
+	option MaxStartDelay '10'
+	option ActLocalSupplementService '1'
+	option RegisterRetryInterval '60'
+	option CallSynEnAutoSwitch '0'
+	option SC_FTR_TRIGGER_BY '1'
+	option FromToHeadURI '0'
+	option VoiceCodecPriorityCtrl '0'
+	option SupReferSpecCharTrans '0'
+	option FaxPassThruCodec 'PCMA'
+	option FaxCtrlMode 'all'
+	option SC_ACCT_SIP_USER_AGENT 'MTK'
+	option DTMFTransportMode 'InBand'
+	option DTMFRfc283310000 '10000'
+	option HotLineFeaureCode '*521*'
+	option WarmLineFeaureCode '*52*'
+	option SyncSysTimeEnable 'No'
+	option SIPMaliciousCallTrace '*33#'
+	option VoIPRegion 'CHN-CHINA'
+	option cidWaitTime '200'
+	option SC_LINE_CID_TYPE '2'
+	option RtpBindIFIndex '0'
+	option VoIPBindWanIf 'br-lan'
+	option IPProtocal 'IPV4'
+	option vipEnable '0'
+	option sipLogDir '/tmp'
+
+config VoIPSimulateTest_Entry0 'VoIPSimulateTest_Entry0'
+	option simulateType '0'
+
+config VoIPSimulateTest_Entry1 'VoIPSimulateTest_Entry1'
+	option simulateType '0'
+
+config VoIPMedia_Common 'VoIPMedia_Common'
+	option SC_SF_CS_PROTOCOL '0'
+	option LocalRTPPort '41000'
+	option LocalRTPPortEnd '42000'
+	option SC_ACCT_MEDIA_G723_RATE '0'
+	option FaxCodec '0'
+	option EchoCancellationEnable 'Yes'
+
+config VoIPBasic_Common 'VoIPBasic_Common'
+	option TelephoneEventPayloadType '97'
+	option LocalSIPPort '5060'
+	option SIPProxyPort '5060'
+	option RegistrarServerPort '5060'
+	option SBSIPProxyPort '5060'
+	option SBRegistrarServerPort '5060'
+	option SIPOutboundProxyPort '5060'
+	option SBOutboundProxyPort '5060'
+	option ProxyIsOutbound '0'
+	option SIPuseSndIPTimeout '15'
+	option SC_ACCT_SIP_SESSION_FLAG '1'
+	option SC_ACCT_SIP_SESSION_REFRESHER '0'
+	option SC_ACCT_SIP_SESSION_METHOD '0'
+	option SC_ACCT_SIP_SESSION_MIN_EXP '0'
+	option SC_ACCT_SIP_SESSION_TIMER '0'
+	option reg_max_retry '10'
+	option SC_PRV_SIP_SE_FORCE_ENABLE '1'
+	option HeartbeatSwitch '0'
+	option HeartbeatCycle '60'
+	option WMX_ES_ENABLE '0'
+	option WMX_AUTO_RECONNECT '0'
+	option sipReloadInterval '2000'
+	option SIPDSCPMark '0'
+	option RTPDSCPMark '0'
+	option SIPProtocol 'SIP'
+	option ImplicRegEnable 'No'
+	option SIPProxyEnable 'Yes'
+	option SIPProxyAddr '0.0.0.0'
+	option RegistrarServer '0.0.0.0'
+	option SBSIPProxyAddr '0.0.0.0'
+	option SBRegistrarServer '0.0.0.0'
+	option SIPOutboundProxyEnable 'Yes'
+	option SIPOutboundProxyAddr '0.0.0.0'
+	option SBOutboundProxyAddr '0.0.0.0'
+	option LogOffMsgSendEnable 'Yes'
+	option diffTime '0'
+	option VoIPLine2Enable 'Yes'
+	option VoIPLineNumber '2'
+
+config VoIPCodecs_PVC0 'VoIPCodecs_PVC0'
+	option SIPPacketizationTime '20'
+
+config VoIPCodecs_PVC1 'VoIPCodecs_PVC1'
+	option SIPPacketizationTime '20'
+
+config VoIPSysParam_Entry0 'VoIPSysParam_Entry0'
+	option SC_ACCT_SYS_STAND_ALONE '0'
+	option SC_ACCT_SIP_SEP_REG_PORT '5060'
+	option SC_ACCT_SIP_INFO_ENABLE '0'
+	option SC_ACCT_SIP_MWI_INTERVAL '86400'
+	option SC_ACCT_SIP_P2P_CALL '0'
+	option SC_ACCT_SIP_DELAY_MEDIA '0'
+	option SC_ACCT_NAT_SRV_PORT '3478'
+	option SC_ACCT_MEDIA_RTP_DETECT '0'
+	option SC_ACCT_RTP_DETECT_INTERVAL '40'
+	option SC_ACCT_RTP_DETECT_PKT_LOSS '30'
+	option SC_ACCT_MEDIA_ILBC_RATE '1'
+	option SC_ACCT_ADV_HOLD_TYPE '2'
+	option SC_ACCT_ADV_HOLD_METHOD '0'
+	option SC_ACCT_ADV_RING_TIMEOUT_RESP '408'
+	option SC_ACCT_ADV_CALL_WAIT_RESP '180'
+	option SC_ACCT_ADV_REJ_MT_CALL_RESP '486'
+	option SC_ACCT_ADV_DND_RESP_CODE '480'
+	option SC_ACCT_ADV_CALL_CONF '2'
+	option SC_ACCT_STATS_MT_RECVED '58'
+	option SC_ACCT_STATS_MT_ANSED '56'
+	option SC_ACCT_STATS_MT_CONNED '56'
+	option SC_ACCT_STATS_MT_FAILED '1'
+	option SC_ACCT_STATS_MO_ATTEMPT '7'
+	option SC_ACCT_STATS_MO_ANSED '5'
+	option SC_ACCT_STATS_MO_CONNED '5'
+	option SC_ACCT_STATS_MO_FAILED '8'
+	option SC_LINE_TYPEII_CID_ACK '1'
+	option SC_LINE_CID_DISP '1'
+	option SC_LINE_DIAL_TIMEOUT_TONE '3'
+	option SC_LINE_CID_FEATURE_STATUS '3'
+	option SC_ACCT_SIP_DOMAIN 'wimax'
+	option SC_ACCT_SIP_SEP_REG_ADDR '0.0.0.0'
+	option SC_ACCT_SIP_MWI_EVENT 'message-summary'
+	option SC_ACCT_NAT_SRV_ADDR '0.0.0.0'
+	option SC_ACCT_MEDIA_6TH_CODEC '3'
+	option SC_ACCT_MEDIA_7TH_CODEC '3'
+	option SC_ACCT_MEDIA_8TH_CODEC '3'
+	option SC_ACCT_MEDIA_9TH_CODEC '3'
+	option SC_ACCT_SD_STR '0'
+	option SC_ACCT_INFO_REG_STATUS 'Unregistered'
+	option SC_LINE_INFO_STATUS 'Idle'
+	option SC_LINE_INFO_CALLERID_DISP '1000'
+	option SC_LINE_INFO_CALLERID_HOST '1000@192.168.1.212'
+	option SC_LINE_HOOK_STATE 'OnHook'
+	option SC_LINE_RING_IMPEDENCE '1'
+
+config VoIPSysParam_Entry1 'VoIPSysParam_Entry1'
+	option SC_ACCT_SYS_STAND_ALONE '0'
+	option SC_ACCT_SIP_SEP_REG_PORT '5060'
+	option SC_ACCT_SIP_INFO_ENABLE '0'
+	option SC_ACCT_SIP_MWI_INTERVAL '86400'
+	option SC_ACCT_SIP_P2P_CALL '0'
+	option SC_ACCT_SIP_DELAY_MEDIA '0'
+	option SC_ACCT_NAT_SRV_PORT '3478'
+	option SC_ACCT_MEDIA_RTP_DETECT '0'
+	option SC_ACCT_RTP_DETECT_INTERVAL '40'
+	option SC_ACCT_RTP_DETECT_PKT_LOSS '30'
+	option SC_ACCT_MEDIA_ILBC_RATE '1'
+	option SC_ACCT_ADV_HOLD_TYPE '2'
+	option SC_ACCT_ADV_HOLD_METHOD '0'
+	option SC_ACCT_ADV_RING_TIMEOUT_RESP '408'
+	option SC_ACCT_ADV_CALL_WAIT_RESP '180'
+	option SC_ACCT_ADV_REJ_MT_CALL_RESP '486'
+	option SC_ACCT_ADV_DND_RESP_CODE '480'
+	option SC_ACCT_ADV_CALL_CONF '2'
+	option SC_ACCT_STATS_MT_RECVED '58'
+	option SC_ACCT_STATS_MT_ANSED '56'
+	option SC_ACCT_STATS_MT_CONNED '56'
+	option SC_ACCT_STATS_MT_FAILED '1'
+	option SC_ACCT_STATS_MO_ATTEMPT '7'
+	option SC_ACCT_STATS_MO_ANSED '5'
+	option SC_ACCT_STATS_MO_CONNED '5'
+	option SC_ACCT_STATS_MO_FAILED '8'
+	option SC_LINE_TYPEII_CID_ACK '1'
+	option SC_LINE_CID_DISP '1'
+	option SC_LINE_DIAL_TIMEOUT_TONE '3'
+	option SC_LINE_CID_FEATURE_STATUS '3'
+	option SC_ACCT_SIP_DOMAIN 'wimax'
+	option SC_ACCT_SIP_SEP_REG_ADDR '0.0.0.0'
+	option SC_ACCT_SIP_MWI_EVENT 'message-summary'
+	option SC_ACCT_NAT_SRV_ADDR '0.0.0.0'
+	option SC_ACCT_MEDIA_6TH_CODEC '3'
+	option SC_ACCT_MEDIA_7TH_CODEC '3'
+	option SC_ACCT_MEDIA_8TH_CODEC '3'
+	option SC_ACCT_MEDIA_9TH_CODEC '3'
+	option SC_ACCT_SD_STR '0'
+	option SC_ACCT_INFO_REG_STATUS 'Unregistered'
+	option SC_LINE_INFO_STATUS 'Idle'
+	option SC_LINE_INFO_CALLERID_DISP '1000'
+	option SC_LINE_INFO_CALLERID_HOST '1000@192.168.1.212'
+	option SC_LINE_HOOK_STATE 'OnHook'
+	option SC_LINE_RING_IMPEDENCE '1'
+
+config VoIPCallCtrl_Entry0 'VoIPCallCtrl_Entry0'
+	option SIPMWIEnable '0'
+	option SC_ACCT_SIP_PRIORITY '0'
+	option SIPDNDEnable '0'
+	option SC_ACCT_ADV_ALL_CF '1'
+	option MTKUCFEnable '0'
+	option MTKBCFEnable '0'
+	option MTKNCFEnable '0'
+	option NoAnswerNCFWaitTime '60'
+	option HotLineEnable '0'
+	option HotLineDelayTime '5'
+	option SIPCallWaitingEnable '0'
+	option SyncCallerTimeEnable '1'
+	option SIPCallerIdEnable '2'
+	option HotLineNumber '*53#'
+	option SIPCallTransfer 'No'
+	option SIP3wayConf 'Yes'
+	option SIPBlindTransferNumber '*12*'
+	option SIPAttendedTransferNumber '*12#'
+	option SIP3wayConfNumber '*333'
+	option HookMaxInterval '500'
+	option HookMinInterval '90'
+	option HookReleaseMin '550'
+
+config VoIPCallCtrl_Entry1 'VoIPCallCtrl_Entry1'
+	option SIPMWIEnable '0'
+	option SC_ACCT_SIP_PRIORITY '0'
+	option SIPDNDEnable '0'
+	option SC_ACCT_ADV_ALL_CF '1'
+	option MTKUCFEnable '0'
+	option MTKBCFEnable '0'
+	option MTKNCFEnable '0'
+	option NoAnswerNCFWaitTime '60'
+	option HotLineEnable '0'
+	option HotLineDelayTime '5'
+	option SIPCallWaitingEnable '0'
+	option SyncCallerTimeEnable '1'
+	option SIPCallerIdEnable '2'
+	option HotLineNumber '*53#'
+	option SIPCallTransfer 'No'
+	option SIP3wayConf 'Yes'
+	option SIPBlindTransferNumber '*12*'
+	option SIPAttendedTransferNumber '*12#'
+	option SIP3wayConfNumber '*333'
+	option HookMaxInterval '500'
+	option HookMinInterval '90'
+	option HookReleaseMin '550'
+
+config VoIPAdvanced_Entry0 'VoIPAdvanced_Entry0'
+	option SubscribeType '0'
+	option SubscribeExpire '0'
+	option SC_LINE_CID_PWR '6'
+	option VoiceVolumeSpeak '0'
+	option VoiceVolumeListen '0'
+
+config VoIPAdvanced_Entry1 'VoIPAdvanced_Entry1'
+	option SubscribeType '0'
+	option SubscribeExpire '0'
+	option SC_LINE_CID_PWR '6'
+	option VoiceVolumeSpeak '0'
+	option VoiceVolumeListen '0'
+
+config VoIPBasic_Entry0 'VoIPBasic_Entry0'
+	option SC_ACCT_NAT_TYPE '0'
+	option Enable 'No'
+
+config VoIPBasic_Entry1 'VoIPBasic_Entry1'
+	option SC_ACCT_NAT_TYPE '0'
+	option Enable 'No'
+
+config VoIPDigitMap_Entry 'VoIPDigitMap_Entry'
+	option DigitMapSpecialEnable '0'
+	option PBXPrefixEnable '0'
+	option PBXDialSecondaryEnable '0'
+	option DigitMapEnable '1'
+	option TMode '0'
+	option NoAnswerTimer '60'
+	option InterDigitTimerShort '3'
+	option InterDigitTimerLong '10'
+	option StartDigitTimer '10'
+	option BusyToneTimer '40'
+	option HangingReminderToneTimer '60'
+	option InterDigitTimerT '0'
+	option DigitMap3 'N/A'
+	option DigitMap4 'N/A'
+	option DigitMap5 'N/A'
+	option DigitMap6 'N/A'
+	option DigitMap7 'N/A'
+	option DigitMap8 'N/A'
+
+config VoIPSpeed_Common 'VoIPSpeed_Common'
+	option MTKSDEnable '0'
+
+config Timezone_Entry 'Timezone_Entry'
+	option TYPE '0'
+	option TZ 'GMT+08:00'
+	option DAYLIGHT 'Disable'
+
+config VoIPLog_Entry 'VoIPLog_Entry'
+	option SC_EMERG_INFO_STATUS_FLAG '0'
+
+config InfoVoIP_Entry0 'InfoVoIP_Entry0'
+	option RegFailReason '0'
+	option Status 'Initializing'
+	option SeizeMin '150'
+	option WAN_STATUS_CHANGE_FLAG 'down_up'
+
+config InfoVoIP_Entry1 'InfoVoIP_Entry1'
+	option RegFailReason '0'
+	option Status 'Initializing'
+	option SeizeMin '150'
+	option WAN_STATUS_CHANGE_FLAG 'down_up'
+
+config DeviceInfo_devParaStatic 'DeviceInfo_devParaStatic'
+
+config VoIPMedia_Entry0 'VoIPMedia_Entry0'
+	option SilenceCompressionEnable 'No'
+
+config VoIPMedia_Entry1 'VoIPMedia_Entry1'
+	option SilenceCompressionEnable 'No'
+
+config DeviceInfo_PVC0 'DeviceInfo_PVC0'
+
+config Info_Ether 'Info_Ether'
+	option ip '192.168.1.1'
+	option mac '00:aa:bb:01:23:40'
+
+config LAN_Entry0 'LAN_Entry0'
+
+config InfoVoIP_Common 'InfoVoIP_Common'
+	option SC_START_STATUS 'Yes'
+
+config VoIPCodecs_PVC0_Entry0 'VoIPCodecs_PVC0_Entry0'
+	option codec 'G.722'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC0_Entry1 'VoIPCodecs_PVC0_Entry1'
+	option codec 'G.711 A-law'
+	option Enable 'Yes'
+	option priority '1'
+
+config VoIPCodecs_PVC0_Entry2 'VoIPCodecs_PVC0_Entry2'
+	option codec 'G.711 U-law'
+	option Enable 'Yes'
+	option priority '2'
+
+config VoIPCodecs_PVC0_Entry3 'VoIPCodecs_PVC0_Entry3'
+	option codec 'G.729'
+	option Enable 'Yes'
+	option priority '3'
+
+config VoIPCodecs_PVC0_Entry4 'VoIPCodecs_PVC0_Entry4'
+	option codec 'G.723'
+	option Enable 'Yes'
+	option priority '4'
+
+config VoIPCodecs_PVC0_Entry5 'VoIPCodecs_PVC0_Entry5'
+	option codec 'G.726 - 16'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC0_Entry6 'VoIPCodecs_PVC0_Entry6'
+	option codec 'G.726 - 24'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC0_Entry7 'VoIPCodecs_PVC0_Entry7'
+	option codec 'G.726 - 32'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC0_Entry8 'VoIPCodecs_PVC0_Entry8'
+	option codec 'G.726 - 40'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC1_Entry0 'VoIPCodecs_PVC1_Entry0'
+	option codec 'G.722'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC1_Entry1 'VoIPCodecs_PVC1_Entry1'
+	option codec 'G.711 A-law'
+	option Enable 'Yes'
+	option priority '1'
+
+config VoIPCodecs_PVC1_Entry2 'VoIPCodecs_PVC1_Entry2'
+	option codec 'G.711 U-law'
+	option Enable 'Yes'
+	option priority '2'
+
+config VoIPCodecs_PVC1_Entry3 'VoIPCodecs_PVC1_Entry3'
+	option codec 'G.729'
+	option Enable 'Yes'
+	option priority '3'
+
+config VoIPCodecs_PVC1_Entry4 'VoIPCodecs_PVC1_Entry4'
+	option codec 'G.723'
+	option Enable 'Yes'
+	option priority '4'
+
+config VoIPCodecs_PVC1_Entry5 'VoIPCodecs_PVC1_Entry5'
+	option codec 'G.726 - 16'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC1_Entry6 'VoIPCodecs_PVC1_Entry6'
+	option codec 'G.726 - 24'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC1_Entry7 'VoIPCodecs_PVC1_Entry7'
+	option codec 'G.726 - 32'
+	option Enable 'Yes'
+	option priority '0'
+
+config VoIPCodecs_PVC1_Entry8 'VoIPCodecs_PVC1_Entry8'
+	option codec 'G.726 - 40'
+	option Enable 'Yes'
+	option priority '0'
+
+package wifictl
+
+config wifi_mac_table 'wifi_mac_table'
+	option sta_num_5g '0'
+	option sta_num_2g '0'
+
+config wifi_diagnose 'wifi_diagnose'
+	option scan_enable '0'
+	option optimize_enable '0'
+	option state 'None'
+	option ch_num_2g '0'
+	option ch_num_5g '0'
+	option autodiag_enable '0'
+	option autodiag_time '3:00'
+
+config wifi_timer_entry 'wifi_timer_entry'
+	option timer_enable '0'
+	option timer_starttime '0'
+	option timer_endtime '0'
+	option mon '0'
+	option tue '0'
+	option wed '0'
+	option thu '0'
+	option fri '0'
+	option sat '0'
+	option sun '0'
+
+config wifitable_2g_entry
+	option mac '32:71:c7:6f:bd:d6'
+	option no_net '0'
+	option btm_cap 'Yes'
+	option rssi0 '-10'
+	option rssi1 '-10'
+
+package wireless
+
+config wifi-device 'radio0'
+	option type 'mt7916'
+	option band '2.4GHz'
+	option hwmode '11ax'
+	option path 'pci0000:00/0000:00:00.0/0000:01:00.0'
+	option country 'VN'
+	option region '1'
+	option aregion '13'
+	option autoch_skip '12;13'
+	option num_antennas '2'
+	option beacon_int '100'
+	option txpower '100'
+	option short_gi_20 '1'
+	option short_gi_40 '1'
+	option phy 'phy0'
+	option dscpprimapenable '0'
+	option ht_gi '0'
+	option dtim '1'
+	option bssidnum '8'
+	option ht_coex '0'
+	option max_station_num '0'
+	option mcast_enable '1'
+	option map_turnkey '1'
+	option map_enable '1'
+	option map_mode '1'
+	option apsd '0'
+	option muofdmaulenable '0'
+	option mumimoulenable '0'
+	option htmode 'HE40'
+	option disabled '0'
+	option channel '6'
+
+config wifi-iface 'default_radio0'
+	option device 'radio0'
+	option network 'lan'
+	option ifname 'ra0'
+	option mode 'ap'
+	option disabled '0'
+	option encryption 'psk-mixed+ccmp'
+	option isolate '0'
+	option uapsd '1'
+	option hidden '0'
+	option macfilter 'disable'
+	option ieee80211w '0'
+	option max_inactivity '60'
+	option wps_pushbutton '1'
+	option wsc_v2 '1'
+	option rekeyinteval '3600'
+	option rekeymethod 'DISABLE'
+	option ht_mcs '33'
+	option wps_conf_status '2'
+	option wps_conf_mode '7'
+	option wps_mode '1'
+	option map_ext '32'
+	option ft_support '1'
+	option ft_local_en '1'
+	option ft_mdId 'A1A1:H'
+	option bss_max_idle '480'
+	option ssid 'Cheshire'
+	option key 'On1y$pcl'
+	option ieee80211r '1'
+	option legacy_rates '0'
+	option band_steering '1'
+	option wmm '1'
+
+config wifi-iface 'default_radio1'
+	option ifname 'ra1'
+	option mode 'ap'
+	option encryption 'psk-mixed+ccmp'
+	option uapsd '1'
+	option hidden '0'
+	option macfilter 'disable'
+	option ieee80211w '0'
+	option max_inactivity '60'
+	option wps_pushbutton '1'
+	option wsc_v2 '1'
+	option rekeyinteval '3600'
+	option rekeymethod 'DISABLE'
+	option ht_mcs '33'
+	option map_ext '32'
+	option bss_max_idle '480'
+	option ssid 'Black Sheep Cafe'
+	option key 'BrownSugarLatte'
+	option disabled '0'
+	option ieee80211r '1'
+	option legacy_rates '0'
+	option band_steering '1'
+	option isolate '1'
+	option device 'radio1'
+	option network 'lan'
+	option wmm '1'
+
+config wifi-device 'radio1'
+	option type 'mt7916'
+	option band '5GHz'
+	option hwmode '11ax'
+	option path 'pci0000:00/0000:00:00.0/0000:01:00.0+1'
+	option htmode 'HE160'
+	option country 'VN'
+	option region '1'
+	option aregion '13'
+	option dfsenable '1'
+	option num_antennas '2'
+	option beacon_int '100'
+	option txpower '100'
+	option doth '1'
+	option short_gi_20 '1'
+	option short_gi_40 '1'
+	option phy 'phy1'
+	option dscpprimapenable '0'
+	option ht_gi '0'
+	option vht_sgi '0'
+	option dtim '1'
+	option bssidnum '8'
+	option ht_coex '0'
+	option max_station_num '0'
+	option mcast_enable '1'
+	option map_turnkey '1'
+	option map_enable '1'
+	option map_mode '1'
+	option apsd '0'
+	option muofdmaulenable '0'
+	option mumimoulenable '0'
+	option disabled '0'
+	option channel '36'
+
+package xtm
+

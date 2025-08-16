@@ -1,0 +1,23 @@
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 47.50
+Features	: half thumb fastmult edsp tls idiva idivt lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 47.50
+Features	: half thumb fastmult edsp tls idiva idivt lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: ECONET (Device Tree)
+Revision	: 0000
+Serial		: 0000000000000000

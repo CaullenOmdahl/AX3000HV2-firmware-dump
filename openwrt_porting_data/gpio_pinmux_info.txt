@@ -1,0 +1,85 @@
+=== GPIO Information ===
+GPIO debug not available
+
+=== GPIO Exports ===
+drwxr-xr-x    2 admin    root             0 Aug 17 03:27 .
+drwxr-xr-x   32 admin    root             0 Aug 17 02:01 ..
+--w-------    1 admin    root          4096 Jan  1  1970 export
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 gpiochip0 -> ../../devices/platform/1fbf0204.gpio/gpio/gpiochip0
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 gpiochip32 -> ../../devices/platform/1fbf0270.gpio/gpio/gpiochip32
+--w-------    1 admin    root          4096 Jan  1  1970 unexport
+
+=== LED Configuration ===
+drwxr-xr-x    2 admin    root             0 Aug 17 03:27 .
+drwxr-xr-x   32 admin    root             0 Aug 17 02:01 ..
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 eth1 -> ../../devices/platform/leds/leds/eth1
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 eth2 -> ../../devices/platform/leds/leds/eth2
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 eth3 -> ../../devices/platform/leds/leds/eth3
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 eth4 -> ../../devices/platform/leds/leds/eth4
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 internet -> ../../devices/platform/leds/leds/internet
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 mesh -> ../../devices/platform/leds/leds/mesh
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 phy_tx_power_disable -> ../../devices/platform/leds/leds/phy_tx_power_disable
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 power -> ../../devices/platform/leds/leds/power
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 voip_hook -> ../../devices/platform/leds/leds/voip_hook
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 voip_reset -> ../../devices/platform/leds/leds/voip_reset
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 xponLos -> ../../devices/platform/leds/leds/xponLos
+lrwxrwxrwx    1 admin    root             0 Aug 17 03:27 xponStatus -> ../../devices/platform/leds/leds/xponStatus
+LED: /sys/class/leds/eth1/
+[none] usbport timer heartbeat default-on netdev 
+1
+LED: /sys/class/leds/eth2/
+[none] usbport timer heartbeat default-on netdev 
+0
+LED: /sys/class/leds/eth3/
+[none] usbport timer heartbeat default-on netdev 
+0
+LED: /sys/class/leds/eth4/
+[none] usbport timer heartbeat default-on netdev 
+0
+LED: /sys/class/leds/internet/
+none usbport [timer] heartbeat default-on netdev 
+0
+LED: /sys/class/leds/mesh/
+none usbport [timer] heartbeat default-on netdev 
+1
+LED: /sys/class/leds/phy_tx_power_disable/
+[none] usbport timer heartbeat default-on netdev 
+1
+LED: /sys/class/leds/power/
+none usbport [timer] heartbeat default-on netdev 
+0
+LED: /sys/class/leds/voip_hook/
+none usbport [timer] heartbeat default-on netdev 
+0
+LED: /sys/class/leds/voip_reset/
+[none] usbport timer heartbeat default-on netdev 
+0
+LED: /sys/class/leds/xponLos/
+none usbport [timer] heartbeat default-on netdev 
+255
+LED: /sys/class/leds/xponStatus/
+none usbport [timer] heartbeat default-on netdev 
+0
+
+=== Pinmux Information ===
+/sys/devices/virtual/net/ra7/brport/hairpin_mode
+/sys/devices/virtual/net/rai6/brport/hairpin_mode
+/sys/devices/virtual/net/ra5/brport/hairpin_mode
+/sys/devices/virtual/net/rai4/brport/hairpin_mode
+/sys/devices/virtual/net/ra3/brport/hairpin_mode
+/sys/devices/virtual/net/eth0.3/brport/hairpin_mode
+/sys/devices/virtual/net/rai2/brport/hairpin_mode
+/sys/devices/virtual/net/ra1/brport/hairpin_mode
+/sys/devices/virtual/net/eth0.1/brport/hairpin_mode
+/sys/devices/virtual/net/rai0/brport/hairpin_mode
+/sys/devices/virtual/net/rai7/brport/hairpin_mode
+/sys/devices/virtual/net/ra6/brport/hairpin_mode
+/sys/devices/virtual/net/rai5/brport/hairpin_mode
+/sys/devices/virtual/net/ra4/brport/hairpin_mode
+/sys/devices/virtual/net/eth0.4/brport/hairpin_mode
+/sys/devices/virtual/net/br-lan/bridge/multicast_snooping
+/sys/devices/virtual/net/rai3/brport/hairpin_mode
+/sys/devices/virtual/net/ra2/brport/hairpin_mode
+/sys/devices/virtual/net/eth0.2/brport/hairpin_mode
+/sys/devices/virtual/net/rai1/brport/hairpin_mode
+/sys/devices/virtual/net/ra0/brport/hairpin_mode

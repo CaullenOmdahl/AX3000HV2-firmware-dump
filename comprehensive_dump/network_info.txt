@@ -1,0 +1,279 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+3: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+4: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 :: brd ::
+5: lan_int2_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+6: lan_int3_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+7: lan_int4_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+8: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/ether 20:be:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+9: eth0.1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UP group default qlen 1000
+    link/ether 22:b0:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+10: eth0.2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:b1:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+11: eth0.3: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:b2:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+12: eth0.4: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:b3:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+13: nas10: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+14: wan_int2_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+15: wan_int3_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+16: wan_int4_if: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+17: ra0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UP group default qlen 1000
+    link/ether 20:be:b4:20:b9:b7 brd ff:ff:ff:ff:ff:ff
+18: omci: <BROADCAST,NOARP,UP,LOWER_UP> mtu 2000 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/ether 20:be:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+19: oam: <BROADCAST,NOARP> mtu 2000 qdisc noop state DOWN group default qlen 1000
+    link/ether 20:be:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+20: pon: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2000 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/ether 20:be:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::22be:b4ff:fe20:b9b6/64 scope link 
+       valid_lft forever preferred_lft forever
+21: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+22: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+23: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+24: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN group default qlen 1000
+    link/gre6 :: brd ::
+25: lro_wan_dev: <BROADCAST,MULTICAST,LOWER_UP> mtu 1500 qdisc noop state UNKNOWN group default qlen 1000
+    link/ether 00:aa:bb:01:23:45 brd ff:ff:ff:ff:ff:ff
+29: ra1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UNKNOWN group default qlen 1000
+    link/ether 22:be:b4:10:b9:b7 brd ff:ff:ff:ff:ff:ff
+30: ra2: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:20:b9:b7 brd ff:ff:ff:ff:ff:ff
+31: ra3: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:30:b9:b7 brd ff:ff:ff:ff:ff:ff
+32: ra4: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:40:b9:b7 brd ff:ff:ff:ff:ff:ff
+33: ra5: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:50:b9:b7 brd ff:ff:ff:ff:ff:ff
+34: ra6: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:60:b9:b7 brd ff:ff:ff:ff:ff:ff
+35: ra7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UNKNOWN group default qlen 1000
+    link/ether 22:be:b4:70:b9:b7 brd ff:ff:ff:ff:ff:ff
+36: rai0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UNKNOWN group default qlen 1000
+    link/ether 20:be:b4:20:b9:c6 brd ff:ff:ff:ff:ff:ff
+37: rai1: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:90:b9:b7 brd ff:ff:ff:ff:ff:ff
+38: rai2: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:a0:b9:b7 brd ff:ff:ff:ff:ff:ff
+39: rai3: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:b0:b9:b7 brd ff:ff:ff:ff:ff:ff
+40: rai4: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:c0:b9:b7 brd ff:ff:ff:ff:ff:ff
+41: rai5: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:d0:b9:b7 brd ff:ff:ff:ff:ff:ff
+42: rai6: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether 22:be:b4:e0:b9:b7 brd ff:ff:ff:ff:ff:ff
+43: rai7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br-lan state UNKNOWN group default qlen 1000
+    link/ether 22:be:b4:f0:b9:b7 brd ff:ff:ff:ff:ff:ff
+44: apcli0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 26:be:b4:20:b9:b7 brd ff:ff:ff:ff:ff:ff
+45: apclii0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 2a:be:b4:20:b9:b7 brd ff:ff:ff:ff:ff:ff
+49: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 20:be:b4:20:b9:b6 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.100.2/16 brd 10.1.255.255 scope global br-lan
+       valid_lft forever preferred_lft forever
+    inet6 fe80::1/64 scope link 
+       valid_lft forever preferred_lft forever
+---
+default via 10.1.100.1 dev br-lan proto static 
+10.1.0.0/16 dev br-lan proto kernel scope link src 10.1.100.2 
+---
+rai4      IEEE 802.11ax  ESSID:"FPT Telecom-B9B6 - IoT"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:C0:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai1      IEEE 802.11acan  ESSID:"FPT Telecom-B9B6 - Guest"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:90:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai5      IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-6"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:D0:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+ra0       IEEE 802.11ax  ESSID:"Cheshire"  
+          Mode:Master  Channel:4  Access Point: 20:BE:B4:20:B9:B7   
+          Bit Rate=573 Mb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+wan_int3_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+rai7      IEEE 802.11ax  ESSID:""  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:F0:B9:B7   
+          Bit Rate=2.401 Gb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+wan_int4_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+pon         ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+ra1       IEEE 802.11ax  ESSID:"Black Sheep Cafe"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:10:B9:B7   
+          Bit Rate=573 Mb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai3      IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-4"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:B0:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+ra6       IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-7"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:60:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai0      IEEE 802.11ax  ESSID:""  
+          Mode:Master  Channel:40  Access Point: 20:BE:B4:20:B9:C6   
+          Bit Rate=2.401 Gb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+ra5       IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-6"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:50:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+lan_int4_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+ra4       IEEE 802.11ax  ESSID:"FPT Telecom-B9B6 - IoT"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:40:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+apcli0    IEEE 802.11bgn  ESSID:""  
+          Mode:Managed  Channel:4  Access Point: Not-Associated   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+oam         ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+apclii0   IEEE 802.11ax  ESSID:""  
+          Mode:Managed  Channel:40  Access Point: Not-Associated   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+lan_int3_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+omci        ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+ra7       IEEE 802.11ax  ESSID:""  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:70:B9:B7   
+          Bit Rate=573 Mb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+lan_int2_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+lro_wan_dev    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+ra2       IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-3"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:20:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai6      IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-7"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:E0:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+rai2      IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-3"  
+          Mode:Master  Channel:40  Access Point: 22:BE:B4:A0:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+wan_int2_if    ESSID:off/any  
+          Mode:Unknown/bug  Channel:0  Access Point: 20:6C:65:76:65:6C   
+          Bit Rate=7.81078e+09 Gb/s   
+          RTS thr:off   Fragment thr:off
+          Encryption key:<too big>
+          Power Management:off
+          
+ra3       IEEE 802.11ax  ESSID:"FPT Telecom-B9B6-4"  
+          Mode:Master  Channel:4  Access Point: 22:BE:B4:30:B9:B7   
+          Bit Rate=0 kb/s   
+          Link Quality:10  Signal level:0  Noise level:223
+          Rx invalid nwid:0  invalid crypt:0  invalid misc:0
+
+---

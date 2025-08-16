@@ -1,0 +1,179 @@
+=== PCI Devices ===
+0000:00:00.0 PCI bridge: MEDIATEK Corp. Device 0810 (rev 03) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=64
+	Memory behind bridge: 20000000-201fffff [size=2M] [32-bit]
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express Root Port (Slot+), MSI 00
+	Capabilities: [100] Virtual Channel
+	Capabilities: [400] L1 PM Substates
+
+0000:01:00.0 Network controller: MEDIATEK Corp. Device 7906
+	Subsystem: MEDIATEK Corp. Device 7906
+	Flags: bus master, fast devsel, latency 0, IRQ 91
+	Memory at 20000000 (64-bit, prefetchable) [size=1M]
+	Memory at 20100000 (64-bit, non-prefetchable) [size=32K]
+	Memory at 20108000 (64-bit, prefetchable) [size=4K]
+	Capabilities: [80] Express Endpoint, MSI 00
+	Capabilities: [e0] MSI: Enable- Count=1/32 Maskable+ 64bit+
+	Capabilities: [f8] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=1556 Rev=1 Len=008 <?>
+	Capabilities: [108] Latency Tolerance Reporting
+	Capabilities: [110] L1 PM Substates
+	Capabilities: [200] Advanced Error Reporting
+	Kernel driver in use: rtpci
+
+0001:00:00.0 PCI bridge: MEDIATEK Corp. Device 0811 (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=64
+	Memory behind bridge: 24000000-241fffff [size=2M] [32-bit]
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express Root Port (Slot+), MSI 00
+	Capabilities: [100] Virtual Channel
+	Capabilities: [400] L1 PM Substates
+
+0001:01:00.0 Network controller: MEDIATEK Corp. Device 790a
+	Subsystem: MEDIATEK Corp. Device 790a
+	Flags: bus master, fast devsel, latency 0, IRQ 84
+	Memory at 24000000 (64-bit, prefetchable) [size=1M]
+	Memory at 24100000 (64-bit, non-prefetchable) [size=32K]
+	Memory at 24108000 (64-bit, prefetchable) [size=4K]
+	Capabilities: [80] Express Endpoint, MSI 00
+	Capabilities: [e0] MSI: Enable- Count=1/32 Maskable+ 64bit+
+	Capabilities: [f8] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=1556 Rev=1 Len=008 <?>
+	Capabilities: [108] Latency Tolerance Reporting
+	Capabilities: [110] L1 PM Substates
+	Capabilities: [200] Advanced Error Reporting
+	Kernel driver in use: mt_pci_slave
+
+
+=== USB Devices ===
+lsusb not available
+
+=== I/O Memory Map ===
+00000000-00000fff : 1fa10000.spi_controller
+08000000-0803ffff : 1fa40000.sram
+1e800000-1e85ffff : 1e800000.npu
+1e900000-1ec12fff : 1e800000.npu
+1efbc800-1efbc80f : 1efbc800.cpu_top
+1efbd000-1efbdffe : 1efbd000.thermal_phy
+1efc0000-1effffff : 1fa40000.sram
+1fa00000-1fa00fff : 1fa00000.rbus
+1fa04000-1fa042ff : 1fa08000.xsi
+1fa05000-1fa052ff : 1fa08000.xsi
+1fa07000-1fa072ff : 1fa08000.xsi
+1fa08000-1fa082ff : 1fa08000.xsi
+1fa09000-1fa092ff : 1fa08000.xsi
+1fa10000-1fa1013f : 1fa10000.spi_controller
+1fa11000-1fa1115f : 1fa11000.spi_spi2nfi
+1fa12000-1fa1214f : 1fa12000.spi_ecc
+1fa20000-1fa2035f : 1fb00000.scu
+1fa2ff24-1fa2ff27 : 1faf0000.pon_phy
+1fa2ff30-1fa2ff3f : 1fb00000.scu
+1fa40000-1fa47fff : 1fa40000.sram
+1fa80000-1fa80063 : 1fa80a00.xpon_xsgmii
+1fa80a00-1fa80b67 : 1fa80a00.xpon_xsgmii
+1fa84000-1fa84684 : 1faf3000.serdes_common_phy
+1fa86000-1fa863fe : 1fa80a00.xpon_xsgmii
+1fa91000-1fa91fff : 1fa91000.pcie
+1fa92000-1fa92fff : 1fa92000.pcie
+1fa93700-1fa93c67 : 1fa93700.pcie_phy
+1fa95700-1fa95c67 : 1fa93700.pcie_phy
+1faa1000-1faa1c03 : 1faa1000.airoha-trng
+1fab0000-1fab3dff : 1fab0000.xhci
+1fab3e00-1fab3eff : 1fab0000.xhci
+1fac0000-1fac13ff : 1fac0000.usb_phy
+1faf0000-1faf1ffe : 1faf0000.pon_phy
+1faf3000-1faf3ffe : 1faf3000.serdes_common_phy
+1faf4000-1faf4ffe : 1faf3000.serdes_common_phy
+1fb00000-1fb0095f : 1fb00000.scu
+1fb30000-1fb302af : 1fb30000.gdma
+1fb50000-1fb525ff : 1fb50000.frame_engine
+1fb54000-1fb57fff : 1fb50000.frame_engine
+1fb58000-1fb5ffff : 1fb50000.frame_engine
+1fb64000-1fb643e7 : 1fb64000.xpon
+1fb66000-1fb6623b : 1fb64000.xpon
+1fb70000-1fb70803 : 1fb70000.crypto_eip93
+1fbd0000-1fbd4ffe : 1fbd0000.pcm
+1fbe2200-1fbe22fb : 1fbe2200.i2s
+1fbe2e00-1fbe2f13 : 1fbe2200.i2s
+1fbe3000-1fbe31ff : 1fa40000.sram
+1fbe3300-1fbe330f : 1fbe3300.i2c_slave
+1fbe3400-1fbe34fb : 1fbe3400.pbus_monitor
+1fbf0000-1fbf002f : serial
+1fbf0100-1fbf013f : 1fbf0100.apb_timer1
+1fbf0200-1fbf0203 : 1fbf0204.gpio
+1fbf0204-1fbf0207 : 1fbf0204.gpio
+1fbf0214-1fbf0217 : 1fbf0204.gpio
+1fbf0220-1fbf0223 : 1fbf0204.gpio
+1fbf0234-1fbf0253 : 1fbf0234.pwm
+1fbf0260-1fbf0263 : 1fbf0270.gpio
+1fbf0264-1fbf0267 : 1fbf0270.gpio
+1fbf0268-1fbf026b : 1fbf0234.pwm
+1fbf0270-1fbf0273 : 1fbf0270.gpio
+1fbf0278-1fbf027b : 1fbf0270.gpio
+1fbf0298-1fbf02bb : 1fbf0234.pwm
+1fbf8000-1fbf8064 : 1fbf8000.i2c
+1fbf9000-1fbf9083 : 1fbf9000.gdump
+20000000-23ffffff : pcie@1fa91000
+  20000000-201fffff : PCI Bus 0000:01
+    20000000-200fffff : 0000:01:00.0
+      20000000-200fffff : 0000:01:00.0
+    20100000-20107fff : 0000:01:00.0
+      20100000-20107fff : 0000:01:00.0
+    20108000-20108fff : 0000:01:00.0
+      20108000-20108fff : 0000:01:00.0
+24000000-27ffffff : pcie@1fa92000
+  24000000-241fffff : PCI Bus 0001:01
+    24000000-240fffff : 0001:01:00.0
+      24000000-240fffff : 0001:01:00.0
+    24100000-24107fff : 0001:01:00.0
+      24100000-24107fff : 0001:01:00.0
+    24108000-24108fff : 0001:01:00.0
+      24108000-24108fff : 0001:01:00.0
+80040000-801fffff : System RAM
+80200000-83ffffff : System RAM
+  80b00000-80e5f33f : Kernel data
+84100000-9fffffff : System RAM
+
+=== I/O Ports ===
+
+=== DMesg Hardware Detection ===
+[11948.684192] [set_bh_ssid_switch_by_mesh]=====>map_enable=1 !!
+[11948.690034] [set_bh_ssid_switch_by_mesh]=====>set bh EnableSSID to 1 !!
+[11948.927630] [bs20_switch_set]=====>radio_2g_disable = 0, radio_5g_disable = 0, ra0_disable = 0, rai0_disable = 0
+[11948.949113] [bs20_switch_set]=====>set bs20 switch to close !!
+[11949.018660] [set_bh_ssid_switch_by_mesh]=====>map_enable=1 !!
+[11949.024497] [set_bh_ssid_switch_by_mesh]=====>set bh EnableSSID to 1 !!
+[11949.252455] [bs20_switch_set]=====>radio_2g_disable = 0, radio_5g_disable = 0, ra0_disable = 0, rai0_disable = 0
+[11949.272429] [bs20_switch_set]=====>set bs20 switch to close !!
+[11949.342933] [set_bh_ssid_switch_by_mesh]=====>map_enable=1 !!
+[11949.348745] [set_bh_ssid_switch_by_mesh]=====>set bh EnableSSID to 1 !!
+[11949.855180] wifictl cmd=iptables -D wlan_redirect -m mac --mac-source b8:06:0d:16:39:7e -j DROP
+[11952.459223] 11952.680031: [mapd][wlanif_issue_wapp_command][2892]receive waitmsgtype(0x001d) fail
+[11960.344887] [1905Daemon][map_read_config_file], [2056]lan = eth0.1
+[11960.351225] [1905Daemon][map_read_config_file], [2056]lan = eth0.2
+[11960.357448] [1905Daemon][map_read_config_file], [2056]lan = eth0.3
+[11960.364023] [1905Daemon][map_read_config_file], [2056]lan = eth0.4
+[11977.435090] 11977.657568: [mapd][wlanif_issue_wapp_command][2892]receive waitmsgtype(0x0010) fail
+[11977.523642] 11977.746135: [mapd][wlanif_issue_wapp_command][2892]receive waitmsgtype(0x0010) fail
+[11977.886333] 11978.108847: [mapd][mapfilter_init][1686]ifname:eth0.2, found: 1
+[11977.913000] 11978.135487: [mapd][mapfilter_init][1699]ETH ifname:eth0.2 mac 22:b1:b4:20:b9:b6type=02, band=0
+
+=== Power Management ===
+freeze mem
+
+=== Clock Information ===
+/sys/devices/system/clockevents
+/sys/devices/system/clockevents/clockevent0
+/sys/devices/system/clockevents/clockevent1
+/sys/devices/system/clocksource
+/sys/devices/system/clocksource/clocksource0
+/sys/devices/system/clocksource/clocksource0/current_clocksource
+/sys/devices/system/clocksource/clocksource0/unbind_clocksource
+/sys/devices/system/clocksource/clocksource0/available_clocksource
+/sys/firmware/devicetree/base/serial@1fbf0000/clock-frequency
+/sys/firmware/devicetree/base/i2c@1fbf8000/clock-frequency

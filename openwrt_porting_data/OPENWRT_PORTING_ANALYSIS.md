@@ -23,10 +23,11 @@ This document provides a comprehensive analysis of the AX3000HV2 router's hardwa
 ## Data Collection Results
 
 ### ✅ Successfully Collected
-1. **Device Tree Information** (`device_tree_raw.txt`)
-   - Complete /proc/device-tree filesystem dump
-   - Hardware component mappings
-   - Memory and interrupt assignments
+1. **Device Tree Information** (`device_tree_detailed.txt`, `device_tree_properties.txt`, `../device_tree_complete.dts`)
+   - ✅ **Complete .dts source file** extracted and available at `../device_tree_complete.dts`
+   - Collected /proc/device-tree structure and key properties manually
+   - Hardware component mappings and memory layout
+   - Full device tree source with all hardware definitions
 
 2. **U-Boot Environment** (`uboot_environment.txt`)
    - Kernel command line parameters
@@ -65,21 +66,26 @@ This document provides a comprehensive analysis of the AX3000HV2 router's hardwa
 ## Critical Files for OpenWrt Development
 
 ### High Priority
-1. **art.bin** (from comprehensive_dump) - WiFi calibration data (CRITICAL)
-2. **bootloader.bin** - U-Boot analysis and boot process understanding
-3. **device_tree_raw.txt** - Hardware layout and component mapping
-4. **mtd_info.txt** - Partition layout for image creation
+1. **../comprehensive_dump_20250817_031148.tar.gz** - Complete firmware dump (23MB)
+   - **art.bin** (3.5MB) - WiFi calibration data for MT7916 (CRITICAL)
+   - **bootloader.bin** (512KB) - U-Boot analysis and boot process understanding
+   - **kernel.bin** (22MB) - Complete kernel binary for reverse engineering
+   - **mtd_info.txt** - MTD partition layout for image creation
+2. **../device_tree_complete.dts** - Complete device tree source file (CRITICAL)
+3. **device_tree_raw.txt** - Raw device tree data for validation
+4. **uboot_environment.txt** - Boot parameters and kernel command line
 
 ### Medium Priority
-5. **kernel.bin** - Kernel binary analysis and reverse engineering
-6. **gpio_pinmux_info.txt** - LED/button functionality
-7. **switch_ethernet_config.txt** - Network port configuration
-8. **kernel_modules.txt** - Driver dependencies
+5. **gpio_pinmux_info.txt** - LED/button functionality and GPIO assignments
+6. **switch_ethernet_config.txt** - Network port configuration and mappings
+7. **additional_hardware_info.txt** - I/O memory maps and hardware detection
+8. **../comprehensive_dump/kernel_modules.txt** - Driver dependencies
 
 ## Recommended Next Steps
 
 ### 1. Device Tree Development
-- Create custom .dts file based on device_tree_raw.txt data
+- ✅ **Complete .dts file available** at `../device_tree_complete.dts`
+- Customize device tree for OpenWrt target requirements
 - Define GPIO pin functions for LEDs and buttons
 - Configure ethernet switch port mappings
 - Set proper memory and interrupt mappings

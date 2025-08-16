@@ -93,28 +93,58 @@ Critical data collected for OpenWrt development:
 
 ## File Structure
 
+### Main Archive: `comprehensive_dump_20250817_031148.tar.gz` (23MB)
+
 ```
 comprehensive_dump_20250817_031148.tar.gz (23MB)
-├── art.bin (3.5MB) - WiFi calibration data for MT7916
-├── bootloader.bin (512KB) - U-Boot bootloader binary
-├── kernel.bin (22MB) - Linux kernel binary  
-├── bootloader_hex_sample.txt - Hexdump sample of bootloader
-├── cpuinfo.txt - ARM processor details and features
-├── kernel_details.txt - Kernel command line, memory mapping, interrupts
-├── kernel_modules.txt - Loaded kernel modules and dependencies
-├── mtd_info.txt - MTD partition layout and sizes
-├── network_info.txt - Network interface configuration and routing
-├── system_info.txt - System information, memory, uptime, hardware
-├── uci_config_full.txt - Complete UCI configuration
-└── wireless_config.tar.gz - Complete wireless driver configuration
-    └── etc/Wireless/
-        ├── RT2860AP/
-        │   ├── RT2860AP.dat - 2.4GHz radio configuration
-        │   └── DBDC_card0.dat - Dual-band configuration
-        ├── RT2860AP_AC/
-        │   ├── RT2860AP.dat - 5GHz radio configuration
-        │   └── RT30xxEEPROM.bin - Wireless EEPROM data
-        └── l1profile.dat - Wireless profile settings
+└── comprehensive_dump/
+    ├── art.bin (3.5MB) - WiFi calibration data for MT7916
+    ├── bootloader.bin (512KB) - U-Boot bootloader binary
+    ├── bootloader_hex_sample.txt - Hexdump sample of bootloader
+    ├── cpuinfo.txt - ARM processor details and features
+    ├── kernel.bin (22MB) - Linux kernel binary
+    ├── kernel_details.txt - Kernel command line, memory mapping, interrupts
+    ├── kernel_modules.txt - Loaded kernel modules and dependencies
+    ├── mtd_info.txt - MTD partition layout and sizes
+    ├── network_info.txt - Network interface configuration and routing
+    ├── system_info.txt - System information, memory, uptime, hardware
+    ├── uci_config_full.txt - Complete UCI configuration
+    └── wireless_config.tar.gz - Complete wireless driver configuration
+        └── etc/Wireless/
+            ├── RT2860AP/
+            │   ├── RT2860AP.dat - 2.4GHz radio configuration
+            │   └── DBDC_card0.dat - Dual-band configuration
+            ├── RT2860AP_AC/
+            │   ├── RT2860AP.dat - 5GHz radio configuration
+            │   └── RT30xxEEPROM.bin - Wireless EEPROM data
+            └── l1profile.dat - Wireless profile settings
+```
+
+### OpenWrt Porting Data: `openwrt_porting_data/`
+
+```
+openwrt_porting_data/
+├── OPENWRT_PORTING_ANALYSIS.md - Comprehensive porting analysis and recommendations
+├── additional_hardware_info.txt - I/O memory maps and hardware detection logs
+├── device_tree_detailed.txt - Detailed device tree information
+├── device_tree_properties.txt - Device tree properties
+├── device_tree_raw.txt - Raw device tree data from /proc/device-tree
+├── gpio_pinmux_info.txt - GPIO pin assignments and LED configurations
+├── switch_ethernet_config.txt - Ethernet switch and network interface mappings
+└── uboot_environment.txt - U-Boot environment and kernel boot parameters
+```
+
+### Additional Data Collections
+
+```
+AX3000HV2_OpenWrt_DevFiles/ - Original firmware development files
+├── DEVICE_SUMMARY.md - Device summary and specifications
+├── config_*.txt - UCI configuration exports
+├── cpuinfo.txt, dmesg_boot.txt, kernel_*.txt - System information
+├── filesystem_info.txt, storage_partitions.txt - Storage details
+└── etc/Wireless/ - Wireless driver configuration files
+
+device_tree_complete.dts - Complete device tree source (extracted)
 ```
 
 ## Potential OpenWrt Development Value

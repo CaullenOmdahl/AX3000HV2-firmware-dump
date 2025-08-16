@@ -1,0 +1,121 @@
+sdram_conf=0x00108893 vendor_name=ECONET Technologies Corp. product_name=xPON ONU ethaddr=20:BE:B4:XX:XX:XX snmp_sysobjid=1.2.3.4.5 country_code=ff ether_gpio=0c power_gpio=1b1b dsl_gpio=0b internet_gpio=02 multi_upgrade_gpio=0b020400000000000000000000000000 onu_type=2 qdma_init=33 root=/dev/mtdblock6 ro console=ttyS0,115200n8 earlycon bootflag=1 serdes_sel=0 serdes_sel=0 tclinux_info=0x15876df,0x4cd0,0x3443d0,0x349198,0x1240000,0x1855497,0x4d60,0x3520f8,0x356f50,0x1500000 
+---
+00000000-00000fff : 1fa10000.spi_controller
+08000000-0803ffff : 1fa40000.sram
+1e800000-1e85ffff : 1e800000.npu
+1e900000-1ec12fff : 1e800000.npu
+1efbc800-1efbc80f : 1efbc800.cpu_top
+1efbd000-1efbdffe : 1efbd000.thermal_phy
+1efc0000-1effffff : 1fa40000.sram
+1fa00000-1fa00fff : 1fa00000.rbus
+1fa04000-1fa042ff : 1fa08000.xsi
+1fa05000-1fa052ff : 1fa08000.xsi
+1fa07000-1fa072ff : 1fa08000.xsi
+1fa08000-1fa082ff : 1fa08000.xsi
+1fa09000-1fa092ff : 1fa08000.xsi
+1fa10000-1fa1013f : 1fa10000.spi_controller
+1fa11000-1fa1115f : 1fa11000.spi_spi2nfi
+1fa12000-1fa1214f : 1fa12000.spi_ecc
+1fa20000-1fa2035f : 1fb00000.scu
+1fa2ff24-1fa2ff27 : 1faf0000.pon_phy
+1fa2ff30-1fa2ff3f : 1fb00000.scu
+1fa40000-1fa47fff : 1fa40000.sram
+1fa80000-1fa80063 : 1fa80a00.xpon_xsgmii
+1fa80a00-1fa80b67 : 1fa80a00.xpon_xsgmii
+1fa84000-1fa84684 : 1faf3000.serdes_common_phy
+1fa86000-1fa863fe : 1fa80a00.xpon_xsgmii
+1fa91000-1fa91fff : 1fa91000.pcie
+1fa92000-1fa92fff : 1fa92000.pcie
+1fa93700-1fa93c67 : 1fa93700.pcie_phy
+1fa95700-1fa95c67 : 1fa93700.pcie_phy
+1faa1000-1faa1c03 : 1faa1000.airoha-trng
+1fab0000-1fab3dff : 1fab0000.xhci
+1fab3e00-1fab3eff : 1fab0000.xhci
+1fac0000-1fac13ff : 1fac0000.usb_phy
+1faf0000-1faf1ffe : 1faf0000.pon_phy
+1faf3000-1faf3ffe : 1faf3000.serdes_common_phy
+1faf4000-1faf4ffe : 1faf3000.serdes_common_phy
+1fb00000-1fb0095f : 1fb00000.scu
+1fb30000-1fb302af : 1fb30000.gdma
+1fb50000-1fb525ff : 1fb50000.frame_engine
+1fb54000-1fb57fff : 1fb50000.frame_engine
+1fb58000-1fb5ffff : 1fb50000.frame_engine
+1fb64000-1fb643e7 : 1fb64000.xpon
+1fb66000-1fb6623b : 1fb64000.xpon
+1fb70000-1fb70803 : 1fb70000.crypto_eip93
+1fbd0000-1fbd4ffe : 1fbd0000.pcm
+1fbe2200-1fbe22fb : 1fbe2200.i2s
+1fbe2e00-1fbe2f13 : 1fbe2200.i2s
+1fbe3000-1fbe31ff : 1fa40000.sram
+1fbe3300-1fbe330f : 1fbe3300.i2c_slave
+1fbe3400-1fbe34fb : 1fbe3400.pbus_monitor
+1fbf0000-1fbf002f : serial
+1fbf0100-1fbf013f : 1fbf0100.apb_timer1
+1fbf0200-1fbf0203 : 1fbf0204.gpio
+1fbf0204-1fbf0207 : 1fbf0204.gpio
+1fbf0214-1fbf0217 : 1fbf0204.gpio
+1fbf0220-1fbf0223 : 1fbf0204.gpio
+1fbf0234-1fbf0253 : 1fbf0234.pwm
+1fbf0260-1fbf0263 : 1fbf0270.gpio
+1fbf0264-1fbf0267 : 1fbf0270.gpio
+1fbf0268-1fbf026b : 1fbf0234.pwm
+1fbf0270-1fbf0273 : 1fbf0270.gpio
+1fbf0278-1fbf027b : 1fbf0270.gpio
+1fbf0298-1fbf02bb : 1fbf0234.pwm
+1fbf8000-1fbf8064 : 1fbf8000.i2c
+1fbf9000-1fbf9083 : 1fbf9000.gdump
+20000000-23ffffff : pcie@1fa91000
+  20000000-201fffff : PCI Bus 0000:01
+    20000000-200fffff : 0000:01:00.0
+      20000000-200fffff : 0000:01:00.0
+    20100000-20107fff : 0000:01:00.0
+      20100000-20107fff : 0000:01:00.0
+    20108000-20108fff : 0000:01:00.0
+      20108000-20108fff : 0000:01:00.0
+24000000-27ffffff : pcie@1fa92000
+  24000000-241fffff : PCI Bus 0001:01
+    24000000-240fffff : 0001:01:00.0
+      24000000-240fffff : 0001:01:00.0
+    24100000-24107fff : 0001:01:00.0
+      24100000-24107fff : 0001:01:00.0
+    24108000-24108fff : 0001:01:00.0
+      24108000-24108fff : 0001:01:00.0
+80040000-801fffff : System RAM
+80200000-83ffffff : System RAM
+  80b00000-80e5f33f : Kernel data
+84100000-9fffffff : System RAM
+---
+           CPU0       CPU1       
+ 66:    1275233    1275655     GICv3  27 Level     arch_timer
+ 69:     150980          0     GICv3 150 Level     rxdone0
+ 70:       7807          0     GICv3 151 Level     rxdone1
+ 75:          0          0     GICv3 157 Level     npuMbox2host
+ 76:          0          0     GICv3 166 Level     npu_wdog0
+ 77:          0          0     GICv3 167 Level     npu_wdog1
+ 81:          0          0     GICv3  57 Level     1fbf0100.apb_timer1
+ 82:          0          0     GICv3  79 Level     ScuPbusTout
+ 84:          2          0     GICv3  72 Level     0001:01:00.0
+ 91:     898525          0     GICv3  99 Level     0000:01:00.0
+ 93:          0          0     GICv3  60 Level     1fbe3300.i2c_slave
+ 97:     108832          0     GICv3  69 Level     qdma_lan_int1
+ 98:          0          0     GICv3  87 Level     qdma_lan_int2
+ 99:         34          0     GICv3  88 Level     qdma_lan_int3
+101:          0          0     GICv3  70 Level     qdma_wan_int1
+102:          0          0     GICv3  90 Level     qdma_wan_int2
+103:          0          0     GICv3  91 Level     qdma_wan_int3
+104:          0          0     GICv3  92 Level     qdma_wan_int4
+105:          0          0     GICv3  81 Level     FE
+108:          0          0     GICv3  74 Level     xpon_isr
+109:          0          0     GICv3  66 Level     dying gasp
+110:          0          0     GICv3  65 Level     xhci-hcd:usb1
+111:          1          0     GICv3  75 Level     phy_isr
+116:       8762          0     GICv3  50 Level     ttyS0
+117:          0          0     GICv3  76 Level     1fb70000.crypto_eip93
+IPI0:          0          0  CPU wakeup interrupts
+IPI1:          0          0  Timer broadcast interrupts
+IPI2:     529369     453808  Rescheduling interrupts
+IPI3:         84         64  Function call interrupts
+IPI4:          0          0  CPU stop interrupts
+IPI5:          0          0  IRQ work interrupts
+IPI6:          0          0  completion interrupts
+Err:          0

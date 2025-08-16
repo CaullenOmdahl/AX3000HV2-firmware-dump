@@ -1,0 +1,74 @@
+-r--r--r--    1 admin    root             4 Aug 17 01:15 #address-cells
+-r--r--r--    1 admin    root             4 Aug 17 01:15 #size-cells
+drwxr-xr-x   59 admin    root             0 Jan  1  1970 .
+drwxr-xr-x    3 admin    root             0 Jan  1  1970 ..
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 airoha-trng@1faa1000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 apb_timer1@1fbf0100
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 chosen
+-r--r--r--    1 admin    root            28 Jan  1  1970 compatible
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 cpu_top@1efb0000
+drwxr-xr-x    6 admin    root             0 Aug 17 01:15 cpus
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 crypto_eip93@1fb70000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 dma-controller@1fa01800
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 frame_engine@1fb50000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 gdma@1fb30000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 gdump@1fbf9000
+drwxr-xr-x    5 admin    root             0 Aug 17 01:15 gpio-keys-polled
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 gpio@1fbf0200
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 gpio@1fbf0270
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 i2c@1fbf8000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 i2c_slave@1fbe3300
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 i2s@1fbe2200
+drwxr-xr-x    3 admin    root             0 Aug 17 01:15 interrupt-controller@09000000
+-r--r--r--    1 admin    root             4 Aug 17 01:15 interrupt-parent
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 ipsec@1fbfa000
+drwxr-xr-x   14 admin    root             0 Aug 17 01:15 leds
+drwxr-xr-x    5 admin    root             0 Jan  1  1970 mdio-bus
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 memory@80000000
+-r--r--r--    1 admin    root             1 Aug 17 01:15 name
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 nand@1fa10000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 npu@1e800000
+drwxr-xr-x   12 admin    root             0 Aug 17 01:15 opp-table
+drwxr-xr-x   10 admin    root             0 Aug 17 01:15 partitions
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pbus_monitor@1fbe3400
+drwxr-xr-x    3 admin    root             0 Aug 17 01:15 pcie@1fa91000
+drwxr-xr-x    3 admin    root             0 Aug 17 01:15 pcie@1fa92000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pcie_phy@1fa93700
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pcm@bfbd0000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pmu
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pon_phy@1faf0000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 psci
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 pwm@1fbf0234
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 rbus@1fa00000
+drwxr-xr-x    4 admin    root             0 Aug 17 01:15 reserved-memory
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 scu@1fb00000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 serdes_common_phy@1faf3000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 serial@1fbf0000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 serial@1fbf0300
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 snor
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 spi_controller@1fa10000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 spi_ecc@1fa12000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 spi_spi2nfi@1fa11000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 sram@1fa40000
+drwxr-xr-x    3 admin    root             0 Aug 17 01:15 thermal-zones
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 thermal_phy@1efbd000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 timer
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 usb_phy@1fac0000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 wdma
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 wed
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 wed2
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 wed_test
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 xhci@1fab0000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 xpon@1fb64000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 xpon_xsgmii@1fa80000
+drwxr-xr-x    2 admin    root             0 Aug 17 01:15 xsi@1fa04000
+/lib/modules/5.4.55/8811_bbu_api.ko
+/lib/modules/5.4.55/act_connmark.ko
+/lib/modules/5.4.55/act_gact.ko
+/lib/modules/5.4.55/act_mirred.ko
+/lib/modules/5.4.55/act_skbedit.ko
+/lib/modules/5.4.55/ae_wan.ko
+/lib/modules/5.4.55/ah6.ko
+/lib/modules/5.4.55/air_en8811h.ko
+/lib/modules/5.4.55/asn1_decoder.ko
+/lib/modules/5.4.55/cls_basic.ko

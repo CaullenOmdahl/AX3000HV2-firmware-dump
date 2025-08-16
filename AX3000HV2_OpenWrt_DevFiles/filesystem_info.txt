@@ -1,0 +1,114 @@
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+ 10 misc
+ 13 input
+ 89 i2c
+ 90 mtd
+108 ppp
+111 qostype
+119 qdma_lan
+120 qdma_wan
+128 ptm
+136 pts
+160 secure_upgrade
+166 ttyACM
+180 usb
+184 gpon_flow
+185 xpon_igmp
+188 ttyUSB
+189 usb_device
+190 pon
+210 /dev/xponmap
+215 ponvlan
+216 ponmacfilter
+220 hwnat0
+221 epon_mac
+224 /dev/cpu_interrupt
+225 /dev/pcie
+226 /dev/fe
+241 /dev/ifc
+251 ubi1
+252 ubi0
+253 hidraw
+254 gpiochip
+267 serdes_cfg
+
+Block devices:
+  1 ramdisk
+  7 loop
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+259 blkext
+---
+crw-------    1 admin    root       90,   0 Jan  1  1970 /dev/mtd0
+crw-------    1 admin    root       90,   1 Jan  1  1970 /dev/mtd0ro
+crw-------    1 admin    root       90,   2 Jan  1  1970 /dev/mtd1
+crw-------    1 admin    root       90,  20 Jan  1  1970 /dev/mtd10
+crw-------    1 admin    root       90,  21 Jan  1  1970 /dev/mtd10ro
+crw-------    1 admin    root       90,  22 Jan  1  1970 /dev/mtd11
+crw-------    1 admin    root       90,  23 Jan  1  1970 /dev/mtd11ro
+crw-------    1 admin    root       90,   3 Jan  1  1970 /dev/mtd1ro
+crw-------    1 admin    root       90,   4 Jan  1  1970 /dev/mtd2
+crw-------    1 admin    root       90,   5 Jan  1  1970 /dev/mtd2ro
+crw-------    1 admin    root       90,   6 Jan  1  1970 /dev/mtd3
+crw-------    1 admin    root       90,   7 Jan  1  1970 /dev/mtd3ro
+crw-------    1 admin    root       90,   8 Jan  1  1970 /dev/mtd4
+crw-------    1 admin    root       90,   9 Jan  1  1970 /dev/mtd4ro
+crw-------    1 admin    root       90,  10 Jan  1  1970 /dev/mtd5
+crw-------    1 admin    root       90,  11 Jan  1  1970 /dev/mtd5ro
+crw-------    1 admin    root       90,  12 Jan  1  1970 /dev/mtd6
+crw-------    1 admin    root       90,  13 Jan  1  1970 /dev/mtd6ro
+crw-------    1 admin    root       90,  14 Jan  1  1970 /dev/mtd7
+crw-------    1 admin    root       90,  15 Jan  1  1970 /dev/mtd7ro
+crw-------    1 admin    root       90,  16 Jan  1  1970 /dev/mtd8
+crw-------    1 admin    root       90,  17 Jan  1  1970 /dev/mtd8ro
+crw-------    1 admin    root       90,  18 Jan  1  1970 /dev/mtd9
+crw-------    1 admin    root       90,  19 Jan  1  1970 /dev/mtd9ro
+brw-------    1 admin    root       31,   0 Jan  1  1970 /dev/mtdblock0
+brw-------    1 admin    root       31,   1 Jan  1  1970 /dev/mtdblock1
+brw-------    1 admin    root       31,  10 Jan  1  1970 /dev/mtdblock10
+brw-------    1 admin    root       31,  11 Jan  1  1970 /dev/mtdblock11
+brw-------    1 admin    root       31,   2 Jan  1  1970 /dev/mtdblock2
+brw-------    1 admin    root       31,   3 Jan  1  1970 /dev/mtdblock3
+brw-------    1 admin    root       31,   4 Jan  1  1970 /dev/mtdblock4
+brw-------    1 admin    root       31,   5 Jan  1  1970 /dev/mtdblock5
+brw-------    1 admin    root       31,   6 Jan  1  1970 /dev/mtdblock6
+brw-------    1 admin    root       31,   7 Jan  1  1970 /dev/mtdblock7
+brw-------    1 admin    root       31,   8 Jan  1  1970 /dev/mtdblock8
+brw-------    1 admin    root       31,   9 Jan  1  1970 /dev/mtdblock9
+---
+/dev/root /rom squashfs ro,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,noatime 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,noatime 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noatime 0 0
+ubi0:rootfs_data /tmp/rootfs_data ubifs rw,relatime,assert=read-only,ubi=0,vol=0 0 0
+/dev/ubi1_0 /overlay ubifs rw,noatime,assert=read-only,ubi=1,vol=0 0 0
+overlayfs:/overlay / overlay rw,noatime,lowerdir=/,upperdir=/overlay/upper,workdir=/overlay/work 0 0
+tmpfs /dev tmpfs rw,nosuid,relatime,size=512k,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,mode=600,ptmxmode=000 0 0
+/dev/mtdblock9 /fpt jffs2 rw,relatime 0 0
+/dev/mtdblock7 /tmp/fpt_lcm jffs2 rw,relatime 0 0
+/dev/ubi0_0 /mnt/ubi0_0 ubifs rw,relatime,assert=read-only,ubi=0,vol=0 0 0
+cgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,name=systemd 0 0

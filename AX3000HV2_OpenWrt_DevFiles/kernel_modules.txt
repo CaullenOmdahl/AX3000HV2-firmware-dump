@@ -1,0 +1,125 @@
+8811_bbu_api           61440  0 
+act_connmark           16384  0 
+act_gact               16384  0 
+act_mirred             16384  0 
+act_skbedit            16384  0 
+ah6                    16384  0 
+air_en8811h            24576  1 8811_bbu_api
+asn1_decoder           16384  1 nf_nat_snmp_basic
+cls_basic              16384  0 
+cls_flow               20480  0 
+cls_fw                 16384  0 
+cls_matchall           16384  0 
+cls_route              20480  0 
+cls_tcindex            20480  0 
+cls_u32                24576  0 
+conntrack_analysis   4210688  0 
+ebt_802_3              16384  0 
+ebt_among              16384  0 
+ebt_arp                16384  4 
+ebt_arpreply           16384  0 
+ebt_dnat               16384  0 
+ebt_ip                 16384 12 
+ebt_ip6                16384  0 
+ebt_limit              16384  0 
+ebt_mark               16384  0 
+ebt_mark_m             16384  0 
+ebt_pkttype            16384  0 
+ebt_redirect           16384  0 
+ebt_snat               16384  0 
+ebt_stp                16384  0 
+ebt_vlan               16384  0 
+ebtable_broute         16384  1 
+ebtable_filter         16384  1 
+ebtable_nat            16384  0 
+ebtables               28672  3 ebtable_nat,ebtable_filter,ebtable_broute
+ecnt_legacy_api        24576  5 xpon,phy,hw_nat,eth,tccicmd
+econet_bob             16384  0 
+em_u32                 16384  0 
+esp6                   20480  0 
+eth                   233472 10 xpon_igmp,ponvlan,xpon,mdio_arht,vxlan_hw_offload,l2tp_offload,gre_hw_offload,loopdetect,hw_nat,eth_ephy
+eth_ephy              118784  0 
+fe_core               192512  1 qdma_wan
+gpio_button_hotplug    16384  1 tccicmd
+gpon_flow              94208  0 
+gre                    16384  3 pptp,ip6_gre,ip_gre
+gre_hw_offload         20480  0 
+hostadpt               20480  0 
+hw_nat                548864  1 
+ifb                    16384  0 
+ifc                   172032  2 qdma_wan,qdma_lan
+ip_gre                 28672  0 
+ip6_gre                32768  0 
+ip6_udp_tunnel         16384  3 wireguard,l2tp_core,vxlan
+ip6t_REJECT            16384  2 
+ip6table_filter        16384  1 
+ip6table_mangle        16384  0 
+ipcomp6                16384  0 
+ipt_REJECT             16384  2 
+iptable_filter         16384  1 
+l2tp_core              24576  2 l2tp_ppp,l2tp_netlink
+l2tp_netlink           24576  1 l2tp_ppp
+l2tp_offload           20480  0 
+l2tp_ppp               24576  0 
+loopdetect             20480  0 
+lro_wan                28672  0 
+mapfilter              53248  2 
+mdio_arht              16384  1 8811_bbu_api
+module_sel             20480  0 
+mt_whnat               69632  0 
+mt7916_ap            7589888  6 mt_whnat
+nat46                  36864  0 
+nf_conncount           20480  1 xt_connlimit
+nf_conntrack_amanda    16384  2 nf_nat_amanda
+nf_conntrack_broadcast   16384  1 nf_conntrack_snmp
+nf_conntrack_snmp      16384  2 nf_nat_snmp_basic
+nf_log_common          16384  2 nf_log_ipv4,nf_log_ipv6
+nf_log_ipv4            16384  0 
+nf_log_ipv6            16384  0 
+nf_nat_amanda          16384  0 
+nf_nat_snmp_basic      16384  0 
+nls_cp936             135168  0 
+nls_utf8               16384  0 
+npu                    24576  0 
+phy                   303104  0 
+ponmacfilter           20480  0 
+ponvlan               258048  1 xpon_igmp
+ppp_async              20480  0 
+ppp_mppe               16384  0 
+pptp                   28672  0 
+qdma_lan              225280  0 
+qdma_wan              192512  1 xpon
+sch_hfsc               28672  0 
+sch_htb                28672  0 
+sch_ingress            16384  0 
+sch_tbf                20480  0 
+scsi_mod              106496  2 usb_storage,sd_mod
+sd_mod                 36864  0 
+secureupgrade          16384  0 
+sif                    16384  1 phy
+speedtest            2297856  0 
+tccicmd                32768  4 xpon,eth_ephy,eth,sif
+udp_tunnel             16384  3 wireguard,l2tp_core,vxlan
+usb_storage            49152  0 
+vxlan                  49152  0 
+vxlan_hw_offload       24576  0 
+wireguard              94208  0 
+xfrm6_tunnel           16384  1 ipcomp6
+xpon                  618496  6 ponmacfilter,xpon_igmp,ponvlan,xponmap
+xpon_igmp             122880  0 
+xpon_int               20480  0 
+xponmap                57344  1 gpon_flow
+xt_CLASSIFY            16384  0 
+xt_DSCP                16384  0 
+xt_LOG                 16384  0 
+xt_NFQUEUE             16384  0 
+xt_connbytes           16384  0 
+xt_connlimit           16384  0 
+xt_connmark            16384  0 
+xt_esp                 16384  0 
+xt_helper              16384  0 
+xt_length              16384  0 
+xt_policy              16384  0 
+xt_recent              20480  0 
+xt_statistic           16384  0 
+xt_time                16384  0 

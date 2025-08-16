@@ -1,0 +1,50 @@
+
+config system
+	option hostname 'OpenWrt'
+	option ttylogin '1'
+	option log_size '64'
+	option urandom_seed '0'
+	option log_remote '0'
+	option log_ip 'bblogs.fpt.vn'
+	option log_port '514'
+	option log_proto 'udp'
+	option conloglevel '7'
+	option remote_level '7'
+	option zonename 'Asia/Ho Chi Minh'
+	option timezone '<+07>-7'
+	option cronloglevel '5'
+
+config timeserver 'ntp'
+	list server 'vn.pool.ntp.org'
+	list server 'asia.pool.ntp.org'
+	list server '2.openwrt.pool.ntp.org'
+	list server '3.openwrt.pool.ntp.org'
+	list server 'time.google.com'
+	list server 'pool.ntp.org'
+
+config reset_button
+	option button 'BTN_0'
+	option action 'released'
+	option handler 'sys led on && prolinecmd factorymode set disable && prolinecmd restore default'
+	option min '10'
+	option max '30'
+
+config wps_button
+	option button 'wps'
+	option action 'released'
+	option handler 'echo wps button pushed > /dev/ttyS0 && echo 2 > /tmp/wps_button'
+	option min '3'
+	option max '30'
+
+config RebootTimer 'RebootTimer'
+	option Enable '0'
+	option StartTime '00:00'
+	option EndTime '00:00'
+	option Mon '0'
+	option Tue '0'
+	option Wed '0'
+	option Thu '0'
+	option Fri '0'
+	option Sat '0'
+	option Sun '0'
+

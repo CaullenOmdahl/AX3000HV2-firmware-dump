@@ -1,0 +1,51 @@
+
+config interface 'loopback'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+	option lastchange '2005'
+	option device 'lo'
+
+config interface 'lan'
+	option force_link '1'
+	option proto 'static'
+	option ip6assign '60'
+	option device 'br-lan'
+	option ipaddr '10.1.100.2'
+	option netmask '255.255.0.0'
+	option gateway '10.1.100.1'
+	option dns '10.1.100.1'
+
+config xpon_vlan 'xpon_vlan'
+	option vlan_id '10'
+
+config xpon_auth 'xpon_auth'
+	option pon_mode 'GPON'
+	option auth_type_g 'sn'
+	option gpon_sn_auth_type 'ascii'
+	option sn_ascii_password 'xxxx'
+	option sn 'ZTEGXXXXXXXX'
+	option loid 'mtk1234'
+	option loidPasswd '1111'
+	option def_setting '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'eth0.1'
+	list ports 'eth0.2'
+	list ports 'eth0.3'
+	list ports 'eth0.4'
+	option igmp_snooping '1'
+	option hash_max '4096'
+
+config device
+	option type '8021q'
+	option ifname 'pon'
+
+config device 'guest_vlan'
+	option name 'eth0.9'
+	option ifname 'eth0'
+	option vid '9'
+	option type '8021q'
+

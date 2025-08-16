@@ -1,0 +1,100 @@
+[ 8382.352678] [process_netlink_msg,195]recv CLIENT_ONOFF_EVENT.
+[ 8382.354828] 7906@C08L3,ap_cmm_peer_assoc_req_action() 1667:  Recv ASSOC from STA - 18:de:50:XX:XX:XX
+[ 8382.360519] [process_netlink_msg,198]client:18:de:50:XX:XX:XX is online.
+[ 8382.367693] 7906@C08L3,ap_cmm_peer_assoc_req_action() 2211: ASSOC Send ASSOC response (Status=0)...
+[ 8382.374376] [process_netlink_msg,192]event_type: 103.
+[ 8382.383397] 7906@C08L2,ap_cmm_peer_assoc_req_action() 2643: entry wcid 1 QosMapSupport=0
+[ 8382.388661] [process_netlink_msg,192]event_type: 103.
+[ 8382.396537] 7906@C01L3,wifi_sys_conn_act() 1075: wdev idx = 0
+[ 8382.401794] [process_netlink_msg,192]event_type: 103.
+[ 8382.408875] 7906@C08L3,wifi_sys_op_lock() 792: wifi_sys_conn_act+0x214/0x3bc [mt7916_ap](0): get wdev_op_lock.
+[ 8382.412768] [process_netlink_msg,192]event_type: 104.
+[ 8382.423720] 7906@C08L3,hw_ctrl_flow_v2_connt_act() 226: wdev_idx=0
+[ 8382.438948] 7906@C08L3,wifi_sys_op_unlock() 813: hw_ctrl_flow_v2_connt_act+0xc4/0x154 [mt7916_ap](0): release wdev_op_lock.
+[ 8382.559210] 7906@C15L3,WPABuildPairMsg1() 5307: <=== send Msg1 of 4-way
+[ 8382.565959] [process_netlink_msg,192]event_type: 103.
+[ 8382.584089] 7906@C15L3,PeerPairMsg2Action() 6181: ===>Receive msg 2
+[ 8382.590452] [process_netlink_msg,192]event_type: 103.
+[ 8382.591181] 7906@C15L3,WPABuildPairMsg3() 5557: <=== send Msg3 of 4-way
+[ 8382.602258] [process_netlink_msg,192]event_type: 103.
+[ 8382.603302] 7906@C15L3,PeerPairMsg4Action() 6605: ===>Receive msg 4
+[ 8382.613682] [process_netlink_msg,192]event_type: 103.
+[ 8382.619513] 7906@C15L2,PeerPairMsg4Action() 6966: AP SETKEYS DONE(ra0) - AKMMap=WPA2PSK, PairwiseCipher=AES, GroupCipher=AES, wcid=1 from 18:de:50:XX:XX:XX
+[ 8382.619513] 
+[ 8382.635410] 8382.627202: inform local wifi STA join
+[ 8382.635410] 
+[ 8382.642177] 8382.633993: [mapd][steer_action_sta_join][2635][Steer] client 59 (18:de:50:XX:XX:XX) local join
+[ 8382.652098] 8382.643920: [mapd][steer_action_csbc_fsm][2389][Steer] CLI 59 18:de:50:XX:XX:XX Event=16 BTMState=1 ForcedState=0
+[ 8382.663558] 8382.655383: [mapd][steer_fsm_invalid_trigger_handler][792][Steer] Client(59) 18:de:50:XX:XX:XX Trigger = CLIENT_ASSOCIATED
+[ 8386.518335] 8386.510117: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8386.533137] 8386.524959: [mapd][ap_roam_phy_based_steer_cand_selection_cent_str][1080][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8391.528344] 8391.520112: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8391.543136] 8391.534962: [mapd][ap_roam_phy_based_steer_cand_selection_cent_str][1080][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8396.538318] 8396.530102: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8396.553114] 8396.544935: [mapd][ap_roam_phy_based_steer_cand_selection_cent_str][1080][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8401.548331] 8401.540114: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8401.563108] 8401.554938: [mapd][ap_roam_phy_based_steer_cand_selection_cent_str][1080][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8405.080636] 7906@C08L3,ap_peer_auth_req_at_idle_action() 736: AUTH - MBSS(0), Rcv AUTH seq#1, Alg=0, Status=0 from [wcid=1]18:de:50:XX:XX:XX
+[ 8405.093416] [process_netlink_msg,192]event_type: 103.
+[ 8405.096362] 7906@C08L3,ap_cmm_peer_assoc_req_action() 1667:  Recv ASSOC from STA - 18:de:50:XX:XX:XX
+[ 8405.098785] [process_netlink_msg,192]event_type: 103.
+[ 8405.107706] 7906@C08L3,ap_cmm_peer_assoc_req_action() 2211: ASSOC Send ASSOC response (Status=0)...
+[ 8405.112912] [process_netlink_msg,192]event_type: 103.
+[ 8405.129029] 7906@C08L2,ap_cmm_peer_assoc_req_action() 2643: entry wcid 1 QosMapSupport=0
+[ 8405.129062] [process_netlink_msg,192]event_type: 103.
+[ 8405.137142] 7906@C01L3,wifi_sys_conn_act() 1075: wdev idx = 0
+[ 8405.144389] [process_netlink_msg,192]event_type: 104.
+[ 8405.149895] 7906@C08L3,wifi_sys_op_lock() 792: wifi_sys_conn_act+0x214/0x3bc [mt7916_ap](0): get wdev_op_lock.
+[ 8405.163909] 7906@C08L3,hw_ctrl_flow_v2_connt_act() 226: wdev_idx=0
+[ 8405.171215] 7906@C08L3,wifi_sys_op_unlock() 813: hw_ctrl_flow_v2_connt_act+0xc4/0x154 [mt7916_ap](0): release wdev_op_lock.
+[ 8405.289524] 7906@C15L3,WPABuildPairMsg1() 5307: <=== send Msg1 of 4-way
+[ 8405.296371] [process_netlink_msg,192]event_type: 103.
+[ 8405.302029] 7906@C15L3,PeerPairMsg2Action() 6181: ===>Receive msg 2
+[ 8405.308663] [process_netlink_msg,192]event_type: 103.
+[ 8405.314829] 7906@C15L3,WPABuildPairMsg3() 5557: <=== send Msg3 of 4-way
+[ 8405.321900] [process_netlink_msg,192]event_type: 103.
+[ 8405.329879] 7906@C15L3,PeerPairMsg4Action() 6605: ===>Receive msg 4
+[ 8405.336394] [process_netlink_msg,192]event_type: 103.
+[ 8405.347734] 7906@C15L2,PeerPairMsg4Action() 6966: AP SETKEYS DONE(ra0) - AKMMap=WPA2PSK, PairwiseCipher=AES, GroupCipher=AES, wcid=1 from 18:de:50:XX:XX:XX
+[ 8405.347734] 
+[ 8405.364224] 8405.356017: inform local wifi STA join
+[ 8405.364224] 
+[ 8405.372991] 8405.364776: [mapd][client_mon_handle_local_join][246]Got local join for client18:de:50:XX:XX:XX, that has not left me/remote BSS 
+[ 8405.386182] 8405.377992: [mapd][steer_action_sta_join][2635][Steer] client 59 (18:de:50:XX:XX:XX) local join
+[ 8405.396310] 8405.388107: [mapd][steer_action_csbc_fsm][2389][Steer] CLI 59 18:de:50:XX:XX:XX Event=16 BTMState=1 ForcedState=0
+[ 8405.408019] 8405.399797: [mapd][steer_fsm_idle_trigger_handler][818][Steer] Client(59) 18:de:50:XX:XX:XX Trigger = CLIENT_ASSOCIATED
+[ 8405.592228] 7906@C08L3,ap_peer_auth_req_at_idle_action() 736: AUTH - MBSS(0), Rcv AUTH seq#1, Alg=0, Status=0 from [wcid=4]b8:06:0d:XX:XX:XX
+[ 8405.605104] [process_netlink_msg,192]event_type: 103.
+[ 8405.610674] [process_netlink_msg,192]event_type: 103.
+[ 8406.558321] 8406.550101: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8406.573158] 8406.564976: [mapd][ap_roam_phy_based_steer_cand_selection_cent_str][1080][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0
+[ 8406.824874] 7906@C08L3,ap_peer_auth_req_at_idle_action() 736: AUTH - MBSS(0), Rcv AUTH seq#1, Alg=0, Status=0 from [wcid=4]b8:06:0d:XX:XX:XX
+[ 8406.837784] [process_netlink_msg,192]event_type: 103.
+[ 8406.843378] [process_netlink_msg,192]event_type: 103.
+[ 8406.848557] 7906@C08L3,ap_cmm_peer_assoc_req_action() 1667:  Recv ASSOC from STA - b8:06:0d:XX:XX:XX
+[ 8406.857821] 7906@C08L3,ap_cmm_peer_assoc_req_action() 2211: ASSOC Send ASSOC response (Status=0)...
+[ 8406.866928] 7906@C08L2,ap_cmm_peer_assoc_req_action() 2643: entry wcid 4 QosMapSupport=0
+[ 8406.868681] [process_netlink_msg,192]event_type: 103.
+[ 8406.875070] 7906@C01L3,wifi_sys_conn_act() 1075: wdev idx = 0
+[ 8406.880471] [process_netlink_msg,192]event_type: 103.
+[ 8406.887414] 7906@C08L3,wifi_sys_op_lock() 792: wifi_sys_conn_act+0x214/0x3bc [mt7916_ap](0): get wdev_op_lock.
+[ 8406.892986] [process_netlink_msg,192]event_type: 104.
+[ 8406.901204] 7906@C08L3,hw_ctrl_flow_v2_connt_act() 226: wdev_idx=0
+[ 8406.913147] 7906@C08L3,wifi_sys_op_unlock() 813: hw_ctrl_flow_v2_connt_act+0xc4/0x154 [mt7916_ap](0): release wdev_op_lock.
+[ 8407.029202] 7906@C15L3,WPABuildPairMsg1() 5307: <=== send Msg1 of 4-way
+[ 8407.035950] 7906@C15L3,PeerPairMsg2Action() 6181: ===>Receive msg 2
+[ 8407.036022] [process_netlink_msg,192]event_type: 103.
+[ 8407.043135] 7906@C15L3,WPABuildPairMsg3() 5557: <=== send Msg3 of 4-way
+[ 8407.047627] [process_netlink_msg,192]event_type: 103.
+[ 8407.054069] 7906@C15L3,PeerPairMsg4Action() 6605: ===>Receive msg 4
+[ 8407.066056] [process_netlink_msg,192]event_type: 103.
+[ 8407.071450] [process_netlink_msg,192]event_type: 103.
+[ 8407.082067] 7906@C15L2,PeerPairMsg4Action() 6966: AP SETKEYS DONE(ra0) - AKMMap=WPA2PSK, PairwiseCipher=AES, GroupCipher=AES, wcid=4 from b8:06:0d:XX:XX:XX
+[ 8407.082067] 
+[ 8407.098050] 8407.089847: inform local wifi STA join
+[ 8407.098050] 
+[ 8407.104596] 8407.096385: [mapd][client_mon_handle_local_join][246]Got local join for clientb8:06:0d:XX:XX:XX, that has not left me/remote BSS 
+[ 8407.117674] 8407.109495: [mapd][steer_action_sta_join][2635][Steer] client 38 (b8:06:0d:XX:XX:XX) local join
+[ 8407.127567] 8407.119391: [mapd][steer_action_csbc_fsm][2389][Steer] CLI 38 b8:06:0d:XX:XX:XX Event=16 BTMState=1 ForcedState=0
+[ 8407.139150] 8407.130966: [mapd][steer_fsm_idle_trigger_handler][818][Steer] Client(38) b8:06:0d:XX:XX:XX Trigger = CLIENT_ASSOCIATED
+[ 8411.568713] 8411.560494: [mapd][ap_roam_ug_steer_cand_selection_cent_str][1011][Steer] Parallel Steering is not allowed:Connected to me but not IDLE state, STATE: 0

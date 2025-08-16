@@ -1,0 +1,44 @@
+MemTotal:         473148 kB
+MemFree:          211364 kB
+MemAvailable:     231980 kB
+Buffers:           12408 kB
+Cached:            51564 kB
+SwapCached:            0 kB
+Active:            49556 kB
+Inactive:          20752 kB
+Active(anon):      12840 kB
+Inactive(anon):      540 kB
+Active(file):      36716 kB
+Inactive(file):    20212 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         473148 kB
+LowFree:          211364 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          6400 kB
+Mapped:            17632 kB
+Shmem:              7044 kB
+KReclaimable:      18000 kB
+Slab:             119340 kB
+SReclaimable:      18000 kB
+SUnreclaim:       101340 kB
+KernelStack:        1872 kB
+PageTables:          720 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      236572 kB
+Committed_AS:      27420 kB
+VmallocTotal:     507904 kB
+VmallocUsed:       33736 kB
+VmallocChunk:          0 kB
+Percpu:              336 kB
+---
+Linux version 5.4.55 (pic@ubuntu2004) (gcc version 10.2.0 (OpenWrt GCC 10.2.0 r16325-88151b8303)) #0 SMP Mon May 26 07:26:19 UTC 2025
+---
+Linux OpenWrt 5.4.55 #0 SMP Mon May 26 07:26:19 UTC 2025 armv7l GNU/Linux
